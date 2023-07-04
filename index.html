@@ -19,6 +19,10 @@
                 <li id="contact-li">Contato</li>
             </ul>
         </nav>
+        <div class="language-container">
+            <img src="./brasil.png" alt="PT"/>
+            <img src="./estados-unidos.png" alt="EN"/>
+        </div>
     </header>
     <div class="hero-container">
         <div class="hero-content">
@@ -42,10 +46,6 @@
                 <div class="profile-card">
                     <img class="profile-image" src="./15994696_1484321451630794_7265019365593122860_o.jpg" />
                     <span class="name-text">Reinaldo Alves</span>
-                    <span class="profile-text">
-                        Foco, disciplina e consistência.
-                        Vamos revolucionar o mercado de tecnologia juntos?
-                    </span>
                     <div class="icons-container">
                         <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
@@ -85,12 +85,17 @@
                     <h2 class="page-title">Serviços oferecidos</h2>
                     <div class="product-content">
                         <h3>Websites</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsam, doloribus aliquam eos voluptates earum iste omnis modi hic recusandae? Voluptates ipsum assumenda minus omnis cum consectetur debitis voluptatibus! Praesentium?</p>
+                        <p>Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</p>
                     </div>
                     <div class="product-content">
                         <h3>Aplicações web</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsam, doloribus aliquam eos voluptates earum iste omnis modi hic recusandae? Voluptates ipsum assumenda minus omnis cum consectetur debitis voluptatibus! Praesentium?</p>
+                        <p>Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL</p>
                     </div>
+                    <ul class="tabs">
+                        <li class="tab active-tab" id="tab-1">Websites</li>
+                        <li class="tab" id="tab-2">Aplicações Web</li>
+                    </ul>
+                    <div class="tabs-content" id="tabs-content">Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</div>
                 </div>
                 <div class="vertical-divider"></div>
                 <div class="technologies-container">
@@ -144,6 +149,7 @@
     <div class="page-container" id="project">
         <div class="content-container">
             <h2 class="page-title">Meus Projetos</h2>
+            <p class="details">Clique no projeto para obter mais detalhes</p>
             <div class="project-content">
                 <img class="scroll-button" id="arrow-left" src="./arrow-left.png" alt="esquerda"/>
                 <div class="cards-container" id="cards-container">
@@ -158,57 +164,42 @@
                         <image class="project-image" src="./YTimage.jpg" />
                         <span class="project-title">Youtube Clone</span>
                         <p class="project-text">
-                            Youtube Clone é uma aplicação que reproduz algumas funcionalidades do Youtube. Este sistema permite que o usuário crie uma conta com nome, email, senha e foto de perfil e faça login por meio desta conta, para que possa adicionar seus próprios vídeos e shorts, com informações como título, categoria, descrição e até foto de capa (thumbnail). Youtube Clone também está integrado à API do Youtube, o que torna possível a exibição de cards dos vídeos mais populares da plataforma do Google.
+                            Youtube Clone é uma aplicação que reproduz algumas funcionalidades do Youtube. Este sistema permite que o usuário crie uma conta e adicione seus próprios vídeos e shorts. Youtube Clone também está integrado à API do Youtube, o que torna possível a exibição de cards dos vídeos mais populares da plataforma do Google.
                         </p>
                     </div>
                     <div class="project-card">
                         <image class="project-image" src="./CoBimage.jpg" />
                         <span class="project-title">Star Wars Encyclopedia</span>
                         <p class="project-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Star Wars Encyclopedia é um website que informações sobre diversos elementos do universo Star Wars, como filmes, personagens, planetas, espécies, veículos e espaçonaves. Para obter estas informações, o website consome a API SWAPI.
                         </p>
                     </div>
                     <div class="project-card">
                         <image class="project-image" src="./CoBimage.jpg" />
                         <span class="project-title">Portfolio Reinaldo Alves</span>
                         <p class="project-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Portfolio de projetos desenvolvidos por Reinaldo Alves, construído em uma única página e que traz informações sobre o desenvolvedor e seus trabalhos, bem como as informações de contato
                         </p>
                     </div>
                     <div class="project-card">
                         <image class="project-image" src="./CoBimage.jpg" />
                         <span class="project-title">Calculadora IMC</span>
                         <p class="project-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Calculadora IMC é um aplicativo web simples que solicita do usuário o seu nome, seu peso e sua altura, retornando o valor do seu IMC, além de indicar que o usuário está no peso ideal ou com algum grau de obesidade, por exemplo.
                         </p>
                     </div>
                     <div class="project-card">
                         <image class="project-image" src="./CoBimage.jpg" />
                         <span class="project-title">Site Conhecendo o Brasil</span>
                         <p class="project-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Website que apresenta o canal do Youtube Conhecendo o Brasil, um canal de curiosidades. A página mostra imagens de todos os estados brasileiros, tem uma seção de curiosidades e também links para as redes onde são postados os conteúdos principais.
                         </p>
                     </div>
                     <div class="project-card">
                         <image class="project-image" src="./CoBimage.jpg" />
                         <span class="project-title">Reprodução da página inicial do Facebook</span>
                         <p class="project-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            Website que reproduz a interface da tela de login e da página inicial do Facebook, com um sistema que permite a navegação entre elas através de um botão. 
                         </p>
                     </div>
                 </div>
@@ -220,8 +211,8 @@
         <div class="content-container">
             <h2 class="page-title">Entre em contato comigo</h2>
             <div class="contact-content">
+                <p class="details">Preencha o formulário abaixo e envie uma mensagem. Responderei o mais rápido possível</p>
                 <form action="https://formspree.io/f/xlekeaya" method="POST">
-                    <p id="title">Preencha o formulário abaixo e envie uma mensagem. Responderei o mais rápido possível</p>
                     <label id="name">
                         Nome:
                         <input type="text" name="name">
@@ -240,32 +231,29 @@
                     </label>
                     <button id="button" type="submit">Enviar</button>
                 </form>
-                <div class="social-container">
-                    <p>Se preferir, entre em contato pelas minhas redes sociais</p>
-                    <div class="social-content">
-                        <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span>@reinaldo.alves8</span>
-                        </a>
-                        <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span>/reinaldo.alves.587</span>
-                        </a>
-                        <a href="https://github.com/reinaldo-alves" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                            <span>/reinaldo-alves</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <span>/reinaldo-alves-8639aba9</span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <footer>
-        ©2023 Todos os direitos reservados - Desenvolvido por Reinaldo Alves
+        <p>©2023 Todos os direitos reservados - Desenvolvido por Reinaldo Alves</p>
+        <div class="social-content">
+            <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@reinaldo.alves8</span>
+            </a>
+            <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>/reinaldo.alves.587</span>
+            </a>
+            <a href="https://github.com/reinaldo-alves" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <span>/reinaldo-alves</span>
+            </a>
+            <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>/reinaldo-alves-8639aba9</span>
+            </a>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/f68a24141b.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
