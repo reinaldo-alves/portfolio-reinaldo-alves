@@ -1,3 +1,5 @@
+import { projectData } from "./projectdata.js";
+
 const homepageLink = document.getElementById('homepage-li');
 const aboutMeLink = document.getElementById('aboutMe-li');
 const solutionLink = document.getElementById('solution-li');
@@ -21,7 +23,7 @@ const arrowRight = document.getElementById('arrow-right');
 
 function scrolltoLeft() {
     const maxScroll = cardsContainer.scrollWidth - cardsContainer.clientWidth;
-    const pixScroll = window.innerWidth > 696 ? 500 : 300;
+    const pixScroll = 500;
     if (cardsContainer.scrollLeft === 0) {
         cardsContainer.scrollLeft = maxScroll;
     } else {
@@ -31,7 +33,7 @@ function scrolltoLeft() {
 
 function scrolltoRight() {
     const maxScroll = cardsContainer.scrollWidth - cardsContainer.clientWidth;
-    const pixScroll = window.innerWidth > 696 ? 500 : 300;
+    const pixScroll = 500;
     if (cardsContainer.scrollLeft === maxScroll) {
         cardsContainer.scrollLeft = 0;
     } else {
@@ -39,15 +41,51 @@ function scrolltoRight() {
     }
 }
 
-arrowLeft.addEventListener('click', () => scrolltoLeft());
-arrowRight.addEventListener('click', () => scrolltoRight());
+function scrolltoTop() {
+    const maxScroll = cardsContainer.scrollHeight - cardsContainer.clientHeight;
+    const pixScroll = window.innerWidth > 478 ? 400 : 200;
+    if (cardsContainer.scrollTop === 0) {
+        cardsContainer.scrollTop = maxScroll;
+    } else {
+        cardsContainer.scrollTop -= pixScroll;
+    }
+}
+
+function scrolltoBottom() {
+    const maxScroll = cardsContainer.scrollHeight - cardsContainer.clientHeight;
+    const pixScroll = window.innerWidth > 478 ? 400 : 200;
+    if (cardsContainer.scrollTop === maxScroll) {
+        cardsContainer.scrollTop = 0;
+    } else {
+        cardsContainer.scrollTop += pixScroll;
+    }
+}
+
+function firstButton() {
+    if (window.innerWidth > 575) {
+        scrolltoLeft()
+    } else {
+        scrolltoTop()
+    }
+}
+
+function lastButton() {
+    if (window.innerWidth > 575) {
+        scrolltoRight()
+    } else {
+        scrolltoBottom()
+    }
+}
+
+arrowLeft.addEventListener('click', () => firstButton());
+arrowRight.addEventListener('click', () => lastButton());
 
 const tabWeb = document.getElementById('tab-1');
 const tabApp = document.getElementById('tab-2');
 const tabsContent = document.getElementById('tabs-content');
 
 const textWeb = 'Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente';
-const textApp = 'Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL';
+const textApp = 'Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, plataformas EAD, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL';
 
 function activeWeb() {
     tabsContent.innerHTML = textWeb;
@@ -63,3 +101,74 @@ function activeApp() {
 
 tabWeb.addEventListener('click', () => activeWeb());
 tabApp.addEventListener('click', () => activeApp());
+
+function showProjectDetails(project) {
+    const modal = document.getElementById('modal');
+    modal.style.visibility = 'visible'
+    
+    const modalContent = document.getElementById('modal-content');
+    modalContent.innerHTML = '';
+    
+    const exitButton = document.createElement('div');
+    exitButton.className = 'exit-button';
+    exitButton.innerText = '×';
+    exitButton.onclick = () => {modal.style.visibility = 'hidden'};
+    modalContent.appendChild(exitButton);
+
+    const modalTitle = document.createElement('h2');
+    modalTitle.className = 'modal-title';
+    modalTitle.innerText = projectData[project].title;
+    modalContent.appendChild(modalTitle);
+
+    const modalImage = document.createElement('img');
+    modalImage.className = 'modal-image';
+    modalImage.src = projectData[project].image;
+    modalContent.appendChild(modalImage);
+
+    const modalInfoLink = document.createElement('div');
+    modalInfoLink.className = 'modal-info';
+    modalInfoLink.id = 'links-container';
+    const linksTitle = document.createElement('h3');
+    linksTitle.innerText = 'Links';
+    modalInfoLink.appendChild(linksTitle);
+    projectData[project].links.forEach((item) => {
+        const anchor = document.createElement('a');
+        anchor.href = item.href;
+        anchor.target = '_blank';
+        const icon = document.createElement('i');
+        icon.className = item.class;
+        const span = document.createElement('span');
+        span.textContent = item.span;
+        anchor.appendChild(icon);
+        anchor.appendChild(span);
+        modalInfoLink.appendChild(anchor);
+    })
+    modalContent.appendChild(modalInfoLink);
+
+    const modalInfoTech = document.createElement('div');
+    modalInfoTech.className = 'modal-info';
+    modalInfoTech.id = 'technologies-container';
+    const techsTitle = document.createElement('h3');
+    techsTitle.innerText = 'Tecnologias';
+    modalInfoTech.appendChild(techsTitle);
+    const modalTech = document.createElement('div');
+    modalTech.className = 'modal-technologies';
+    projectData[project].technologies.forEach((item) => {
+        const image = document.createElement('img');
+        image.alt = item.alt;
+        image.src = item.src;
+        modalTech.appendChild(image);
+    })
+    modalInfoTech.appendChild(modalTech);
+    modalContent.appendChild(modalInfoTech);
+
+    const modalText = document.createElement('p');
+    modalText.className = 'modal-text';
+    modalText.innerText = projectData[project].text;
+    modalContent.appendChild(modalText);
+}
+
+projectData.forEach((item, index) => {
+    const card = document.getElementById(`project${index}`);
+    card.addEventListener('click', () => showProjectDetails(index));
+})
