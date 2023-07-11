@@ -7,8 +7,13 @@ const projectLink = document.getElementById('project-li');
 const contactLink = document.getElementById('contact-li');
 
 function scroll(pages) {
-    const scrollPixels = window.innerHeight * pages;
-    window.scrollTo({top: scrollPixels, behavior: 'smooth'})
+    if (window.innerHeight > 625) {
+        const scrollPixels = window.innerHeight * pages;
+        window.scrollTo({top: scrollPixels, behavior: 'smooth'})
+    } else {
+        const scrollPixels = 625 * pages;
+        window.scrollTo({top: scrollPixels, behavior: 'smooth'})
+    }
 }
 
 homepageLink.addEventListener('click', () => scroll(0));
@@ -82,21 +87,22 @@ arrowRight.addEventListener('click', () => lastButton());
 
 const tabWeb = document.getElementById('tab-1');
 const tabApp = document.getElementById('tab-2');
-const tabsContent = document.getElementById('tabs-content');
-
-const textWeb = 'Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente';
-const textApp = 'Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, plataformas EAD, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL';
+const tabsContentWeb = document.getElementById('tabs-content-1');
+const tabsContentApp = document.getElementById('tabs-content-2');
 
 function activeWeb() {
-    tabsContent.innerHTML = textWeb;
     tabWeb.classList.add('active-tab');
     tabApp.classList.remove('active-tab');
+    tabsContentWeb.style.display = 'block'
+    tabsContentApp.style.display = 'none'
 }
 
 function activeApp() {
-    tabsContent.innerHTML = textApp
+    // tabsContent.innerHTML = textApp
     tabApp.classList.add('active-tab');
     tabWeb.classList.remove('active-tab');
+    tabsContentApp.style.display = 'block'
+    tabsContentWeb.style.display = 'none'
 }
 
 tabWeb.addEventListener('click', () => activeWeb());

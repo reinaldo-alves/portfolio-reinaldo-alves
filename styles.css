@@ -20,7 +20,6 @@
 
 html, body {
     scroll-snap-type: y proximity;
-    scroll-snap-stop: always;
     scroll-behavior: smooth;
     background-color: #000;
 }
@@ -87,6 +86,7 @@ li:hover {
 
 .hero-container {
     height: 100vh;
+    min-height: 625px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -185,6 +185,7 @@ h2 {
 
 .mainphoto {
     height: 100%;
+    min-height: 625px;
     position: absolute;
     top: 0;
     right: 0;
@@ -194,6 +195,7 @@ h2 {
 
 .page-container {
     height: 100vh;
+    min-height: 625px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -822,21 +824,21 @@ footer p {
 
     .tabs {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: center;
         position: relative;
-        border-bottom: 1px solid #fff;
-        margin-top: 15px;
+        margin: 15px 0;
     }
 
     .tab {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 5px 20px;
         border: 1px solid #fff;
-        border-bottom: none;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
+        border-radius: 8px;
         background-color: rgba(0,0,0,0.5);
         height: 40px;
         font-family: 'Oswald', sans-serif;
@@ -844,6 +846,7 @@ footer p {
         font-size: 20px;
         text-shadow: 0 0 50px black;
         font-weight: bold;
+        margin-top: 10px;
     }
     
     .tab:hover {
@@ -852,9 +855,22 @@ footer p {
         color: #d870db;
     }
 
+    .tab img {
+        width: 40px;
+        height: 40px;
+        filter: invert(1);
+        rotate: -90deg;
+    }
+
     .active-tab {
         height: 62px;
         font-size: 28px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .active-tab img {
+        rotate: 90deg;
     }
 
     .tabs-content {
@@ -1095,5 +1111,9 @@ footer p {
     
     .profile-image {
         display: none;
+    }
+
+    .technologies-card {
+        padding: 5px;
     }
 }

@@ -92,10 +92,17 @@
                         <p>Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL</p>
                     </div>
                     <ul class="tabs">
-                        <li class="tab active-tab" id="tab-1">Websites</li>
-                        <li class="tab" id="tab-2">Aplicações Web</li>
+                        <li class="tab active-tab" id="tab-1">
+                            <span>Websites</span>
+                            <img alt="baixo" src="./arrow-left.png" />                            
+                        </li>
+                        <div class="tabs-content" id="tabs-content-1">Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</div>
+                        <li class="tab" id="tab-2">
+                            <span>Aplicações Web</span>
+                            <img alt="baixo" src="./arrow-left.png" />
+                        </li>
+                        <div class="tabs-content" id="tabs-content-2" style="display: none;">Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, plataformas EAD, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL</div>
                     </ul>
-                    <div class="tabs-content" id="tabs-content">Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</div>
                 </div>
                 <div class="vertical-divider"></div>
                 <div class="technologies-container">
@@ -186,38 +193,7 @@
             </div>
         </div>
         <div class="modal" id="modal">
-            <div class="modal-content" id="modal-content">
-                <!-- <div class="exit-button" id="exit-button" onclick="hideModal()">&#215;</div>
-                <h2 class="modal-title">OOOO</h2>
-                <img class="modal-image" src="./CoBimage.jpg" />
-                <div class="modal-info" id="links-container">
-                    <h3>Links</h3>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <span>Website</span>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>Youtube</span>
-                    </a>
-                </div>
-                <div class="modal-info" id="technologies-container">
-                    <h3>Tecnologias</h3>
-                    <div class="modal-technologies">
-                        <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                        <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                        <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                        <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    </div>
-                </div>
-                <p class="modal-text">
-                    Website que reproduz a interface da tela de login e da página inicial do Facebook, com um sistema que permite a navegação entre elas através de um botão. 
-                </p> -->
-            </div>
+            <div class="modal-content" id="modal-content"></div>
         </div>
     </div>
     <div class="page-container" id="contact">
@@ -272,3 +248,12 @@
     <script type="module" src="./script.js"></script>
 </body>
 </html>
+
+<!-- O que falta
+1 - Criar texto do Sobre Mim e corrigir visibilidade
+2 - Criar textos para os projetos
+3 - Corrigir imagem do SocketIO no modal
+4 - Colocar imagens corretas nos projetos (cards e modals)
+5 - Criar carrossel no modal
+6 - Melhorar responsividade na parte de soluções
+7 - Criar página em inglês -->
