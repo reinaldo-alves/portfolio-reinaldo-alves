@@ -163,6 +163,7 @@ function showProjectDetails(project) {
         const image = document.createElement('img');
         image.alt = item.alt;
         image.src = item.src;
+        image.style = item.style;
         modalTech.appendChild(image);
     })
     modalInfoTech.appendChild(modalTech);

@@ -10,12 +10,12 @@ const whatsAppWebClone = {
         {
             href: 'https://github.com/reinaldo-alves/whatsapp-front',
             class: 'fa-brands fa-github',
-            span: 'GitHub - Frontend'
+            span: 'GitHub(Frontend)'
         },
         {
             href: 'https://github.com/reinaldo-alves/whatsapp-back',
             class: 'fa-brands fa-github',
-            span: 'GitHub - Backend'
+            span: 'GitHub(Backend)'
         },
         {
             href: 'https://youtu.be/sIcOC_YK4xs',
@@ -26,15 +26,18 @@ const whatsAppWebClone = {
     technologies: [
         {
             alt: 'React',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            style: ''
         },
         {
             alt: 'SocketIO',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
+            style: 'filter: invert(1);'
         },
         {
             alt: 'TypeScript',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            style: ''
         },
     ],
     text: 'WhatsApp Web Clone é um chat em tempo real inspirado no WhatsApp. Este sistema permite que os usuários criem contas com nome, email, senha e foto de perfil e façam login por meio desta conta. Uva vez logado, o usuário pode iniciar conversas com qualquer um que também esteja online, também pode criar chats em grupos e adicionar outros usuários nesses grupos.'
@@ -52,12 +55,12 @@ const youtubeClone = {
         {
             href: 'https://github.com/reinaldo-alves/youtube-clone',
             class: 'fa-brands fa-github',
-            span: 'GitHub - Frontend'
+            span: 'GitHub(Frontend)'
         },
         {
             href: 'https://github.com/reinaldo-alves/api-youtube',
             class: 'fa-brands fa-github',
-            span: 'GitHub - Backend'
+            span: 'GitHub(Backend)'
         },
         {
             href: '#',
@@ -68,19 +71,23 @@ const youtubeClone = {
     technologies: [
         {
             alt: 'React',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            style: ''
         },
         {
             alt: 'TypeScript',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            style: ''
         },
         {
             alt: 'NodeJS',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+            style: ''
         },
         {
             alt: 'MySQL',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+            style: ''
         },
     ],
     text: 'Youtube Clone é uma aplicação que reproduz algumas funcionalidades do Youtube. Este sistema permite que o usuário crie uma conta e adicione seus próprios vídeos e shorts. Youtube Clone também está integrado à API do Youtube, o que torna possível a exibição de cards dos vídeos mais populares da plataforma do Google.'
@@ -104,15 +111,18 @@ const starWarsEncyclopedia = {
     technologies: [
         {
             alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            style: ''
         },
         {
             alt: 'CSS3',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
         },
         {
             alt: 'JavaScript',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            style: ''
         },
     ],
     text: 'Star Wars Encyclopedia é um website que informações sobre diversos elementos do universo Star Wars, como filmes, personagens, planetas, espécies, veículos e espaçonaves. Para obter estas informações, o website consome a API SWAPI.'
@@ -136,15 +146,18 @@ const reinaldoAlvesPortfolio = {
     technologies: [
         {
             alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            style: ''
         },
         {
             alt: 'CSS3',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
         },
         {
             alt: 'JavaScript',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            style: ''
         },
     ],
     text: 'Portfolio de projetos desenvolvidos por Reinaldo Alves, construído em uma única página e que traz informações sobre o desenvolvedor e seus trabalhos, bem como as informações de contato.'
@@ -168,15 +181,18 @@ const calculadoraIMC = {
     technologies: [
         {
             alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            style: ''
         },
         {
             alt: 'CSS3',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
         },
         {
             alt: 'JavaScript',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            style: ''
         },
     ],
     text: 'Calculadora IMC é um aplicativo web simples que solicita do usuário o seu nome, seu peso e sua altura, retornando o valor do seu IMC, além de indicar que o usuário está no peso ideal ou com algum grau de obesidade, por exemplo.'
@@ -200,11 +216,13 @@ const siteConhecendoOBrasil = {
     technologies: [
         {
             alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            style: ''
         },
         {
             alt: 'CSS3',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
         },
     ],
     text: 'Website que apresenta o canal do Youtube Conhecendo o Brasil, um canal de curiosidades. A página mostra imagens de todos os estados brasileiros, tem uma seção de curiosidades e também links para as redes onde são postados os conteúdos principais.'
@@ -228,11 +246,13 @@ const reproducaoFacebook = {
     technologies: [
         {
             alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            style: ''
         },
         {
             alt: 'CSS3',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
         },
     ],
     text: 'Website que reproduz a interface da tela de login e da página inicial do Facebook, com um sistema que permite a navegação entre elas através de um botão.'

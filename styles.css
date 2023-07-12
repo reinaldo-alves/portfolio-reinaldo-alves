@@ -19,7 +19,7 @@
 }
 
 html, body {
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
     scroll-behavior: smooth;
     background-color: #000;
 }
@@ -242,7 +242,7 @@ h2 {
 
 .profile-content {
     width: 60%;
-    min-width: 800px;
+    min-width: 850px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -308,11 +308,19 @@ i:hover {
 }
 
 .profile-sinopse {
-    width: 430px;
+    width: 490px;
+    max-height: 370px;
+    padding: 10px;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 17px;
     text-shadow: 0 0 50px black;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: 1px solid #d870db;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #d870db;
+    overflow-y: auto;
 }
 
 .service-container {
@@ -595,6 +603,11 @@ i:hover {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .modal-info a:hover span {
@@ -932,6 +945,8 @@ footer p {
         min-width: 320px;
         flex-direction: column;
         justify-content: space-around;
+        gap: 15px;
+        margin-top: 10px;
     }
 
     .profile-card {
@@ -963,6 +978,8 @@ footer p {
 
     .profile-sinopse {
         width: 450px;
+        max-height: calc(100vh - 407px);
+        min-height: 218px;
     }
 
     .tabs-content {
@@ -1063,6 +1080,8 @@ footer p {
 
     .profile-sinopse {
         width: calc(100% - 40px);
+        max-height: calc(100vh - 339px);
+        min-height: 286px;
     }
 
     .tab {
@@ -1110,10 +1129,39 @@ footer p {
     }
     
     .profile-image {
-        display: none;
+        height: 100px;
+        width: 100px;
+    }
+
+    .icons-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .profile-button {
+        margin-top: 15px;
+    }
+
+    .profile-sinopse {
+        width: calc(100% - 40px);
+        max-height: calc(100vh - 416px);
+        min-height: 209px;
     }
 
     .technologies-card {
         padding: 5px;
+    }
+
+    .modal-info a i {
+        font-size: 16px;
+    }
+
+    .modal-info a span {
+        font-size: 16px;
+    }
+
+    .modal-technologies {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
