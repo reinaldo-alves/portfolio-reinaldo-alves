@@ -19,7 +19,7 @@
 }
 
 html, body {
-    /* scroll-snap-type: y proximity; */
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
     background-color: #000;
 }
