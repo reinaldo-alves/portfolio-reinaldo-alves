@@ -109,6 +109,14 @@ tabWeb.addEventListener('click', () => activeWeb());
 tabApp.addEventListener('click', () => activeApp());
 
 function showProjectDetails(project) {
+    const lang = () => {
+        if (document.documentElement.lang === 'pt-br') {
+            return true
+        } else {
+            return false
+        }
+    };
+    
     const modal = document.getElementById('modal');
     modal.style.visibility = 'visible'
     
@@ -123,7 +131,7 @@ function showProjectDetails(project) {
 
     const modalTitle = document.createElement('h2');
     modalTitle.className = 'modal-title';
-    modalTitle.innerText = projectData[project].title;
+    modalTitle.innerText = lang() ? projectData[project].title : projectData[project].titleEN;
     modalContent.appendChild(modalTitle);
 
     const modalImage = document.createElement('img');
@@ -155,7 +163,7 @@ function showProjectDetails(project) {
     modalInfoTech.className = 'modal-info';
     modalInfoTech.id = 'technologies-container';
     const techsTitle = document.createElement('h3');
-    techsTitle.innerText = 'Tecnologias';
+    techsTitle.innerText = lang() ? 'Tecnologias' : 'Technologies';
     modalInfoTech.appendChild(techsTitle);
     const modalTech = document.createElement('div');
     modalTech.className = 'modal-technologies';
@@ -171,7 +179,7 @@ function showProjectDetails(project) {
 
     const modalText = document.createElement('p');
     modalText.className = 'modal-text';
-    modalText.innerText = projectData[project].text;
+    modalText.innerText = lang() ? projectData[project].text : projectData[project].textEN;
     modalContent.appendChild(modalText);
 }
 
