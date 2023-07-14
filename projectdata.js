@@ -1,7 +1,7 @@
 const whatsAppWebClone = {
     title: 'WhatsApp Web Clone',
     titleEN: 'WhatsApp Web Clone',
-    image: './wppimage.jpeg',
+    image: './messages.jpg',
     links: [
         {
             href: '#',
@@ -100,7 +100,7 @@ const youtubeClone = {
 const starWarsEncyclopedia = {
     title: 'Star Wars Encyclopedia',
     titleEN: 'Star Wars Encyclopedia',
-    image: './wppimage.jpeg',
+    image: './homestars.jpg',
     links: [
         {
             href: 'https://reinaldo-alves.github.io/Star-Wars-Encyclopedia/',
@@ -137,7 +137,7 @@ const starWarsEncyclopedia = {
 const reinaldoAlvesPortfolio = {
     title: 'Reinaldo Alves Portfolio',
     titleEN: "Reinaldo Alves' Portfolio",
-    image: './wppimage.jpeg',
+    image: './home.jpg',
     links: [
         {
             href: 'https://reinaldo-alves.github.io/portfolio-reinaldo-alves/',
@@ -174,7 +174,7 @@ const reinaldoAlvesPortfolio = {
 const calculadoraIMC = {
     title: 'Calculadora IMC',
     titleEN: 'BMI Calculator',
-    image: './wppimage.jpeg',
+    image: './imccalc.jpg',
     links: [
         {
             href: 'https://reinaldo-alves.github.io/IMC-calc/',
@@ -243,7 +243,7 @@ const siteConhecendoOBrasil = {
 const reproducaoFacebook = {
     title: 'Reprodução da página inicial do Facebook',
     titleEN: 'Facebook Homepage Reproduction',
-    image: './wppimage.jpeg',
+    image: './facehome.jpg',
     links: [
         {
             href: 'https://reinaldo-alves.github.io/facebook-interface/',
