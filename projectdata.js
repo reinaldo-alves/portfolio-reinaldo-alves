@@ -1,7 +1,12 @@
 const whatsAppWebClone = {
     title: 'WhatsApp Web Clone',
     titleEN: 'WhatsApp Web Clone',
-    image: './messages.jpg',
+    image: [
+        './whatsappwebclone/messages.jpg',
+        './whatsappwebclone/home.jpg',
+        './whatsappwebclone/login.jpg',
+        './whatsappwebclone/signup.jpg'
+    ],
     links: [
         {
             href: '#',
@@ -48,7 +53,7 @@ const whatsAppWebClone = {
 const youtubeClone = {
     title: 'Youtube Clone',
     titleEN: 'Youtube Clone',
-    image: './YTimage.jpg',
+    image: ['./YTimage.jpg'],
     links: [
         {
             href: '#',
@@ -100,7 +105,12 @@ const youtubeClone = {
 const starWarsEncyclopedia = {
     title: 'Star Wars Encyclopedia',
     titleEN: 'Star Wars Encyclopedia',
-    image: './homestars.jpg',
+    image: [
+        './starwarsencyclopedia/homestars.jpg',
+        './starwarsencyclopedia/starcharacters.jpg',
+        './starwarsencyclopedia/starpages.jpg',
+        './starwarsencyclopedia/starmodal.jpg'
+    ],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/Star-Wars-Encyclopedia/',
@@ -137,7 +147,13 @@ const starWarsEncyclopedia = {
 const reinaldoAlvesPortfolio = {
     title: 'Reinaldo Alves Portfolio',
     titleEN: "Reinaldo Alves' Portfolio",
-    image: './home.jpg',
+    image: [
+        './portfolioreinaldoalves/home.jpg',
+        './portfolioreinaldoalves/aboutme.jpg',
+        './portfolioreinaldoalves/services.jpg',
+        './portfolioreinaldoalves/projects.jpg',
+        './portfolioreinaldoalves/contacts.jpg',
+    ],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/portfolio-reinaldo-alves/',
@@ -174,7 +190,7 @@ const reinaldoAlvesPortfolio = {
 const calculadoraIMC = {
     title: 'Calculadora IMC',
     titleEN: 'BMI Calculator',
-    image: './imccalc.jpg',
+    image: ['./imccalc.jpg'],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/IMC-calc/',
@@ -211,7 +227,13 @@ const calculadoraIMC = {
 const siteConhecendoOBrasil = {
     title: 'Site Conhecendo o Brasil', 
     titleEN: "Conhecendo o Brasil Website", 
-    image: './CoBimage.jpg',
+    image: [
+        './conhecendoobrasil/CoBimage.jpg',
+        './conhecendoobrasil/CoBvideo.jpg',
+        './conhecendoobrasil/CoBphoto.jpg',
+        './conhecendoobrasil/CoBcuriosity.jpg',
+        './conhecendoobrasil/CoBcontact.jpg'
+    ],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/site-CoB/',
@@ -243,7 +265,10 @@ const siteConhecendoOBrasil = {
 const reproducaoFacebook = {
     title: 'Reprodução da página inicial do Facebook',
     titleEN: 'Facebook Homepage Reproduction',
-    image: './facehome.jpg',
+    image: [
+        './facebookinterface/facehome.jpg',
+        './facebookinterface/facelogin.jpg'
+    ],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/facebook-interface/',

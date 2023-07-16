@@ -98,7 +98,6 @@ function activeWeb() {
 }
 
 function activeApp() {
-    // tabsContent.innerHTML = textApp
     tabApp.classList.add('active-tab');
     tabWeb.classList.remove('active-tab');
     tabsContentApp.style.display = 'block'
@@ -134,9 +133,36 @@ function showProjectDetails(project) {
     modalTitle.innerText = lang() ? projectData[project].title : projectData[project].titleEN;
     modalContent.appendChild(modalTitle);
 
-    const modalImage = document.createElement('img');
+    // const modalImage = document.createElement('img');
+    // modalImage.className = 'modal-image';
+    // modalImage.src = projectData[project].image;
+    // modalContent.appendChild(modalImage);
+
+    const modalImage = document.createElement('div');
     modalImage.className = 'modal-image';
-    modalImage.src = projectData[project].image;
+    const swiperDiv = document.createElement('div');
+    swiperDiv.className = 'swiper mySwiper';
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.className = 'swiper-wrapper';
+    projectData[project].image.forEach((imageUrl) => {
+        const swiperSlide = document.createElement('div');
+        swiperSlide.className = 'swiper-slide';
+        const imageElement = document.createElement('img');
+        imageElement.src = imageUrl;
+        swiperSlide.appendChild(imageElement);
+        swiperWrapper.appendChild(swiperSlide);
+    });
+    const swiperNextButton = document.createElement('div');
+    swiperNextButton.className = 'swiper-button-next';
+    const swiperPrevButton = document.createElement('div');
+    swiperPrevButton.className = 'swiper-button-prev';
+    const swiperPagination = document.createElement('div');
+    swiperPagination.className = 'swiper-pagination';
+    swiperDiv.appendChild(swiperWrapper);
+    swiperDiv.appendChild(swiperNextButton);
+    swiperDiv.appendChild(swiperPrevButton);
+    swiperDiv.appendChild(swiperPagination);
+    modalImage.appendChild(swiperDiv);
     modalContent.appendChild(modalImage);
 
     const modalInfoLink = document.createElement('div');
@@ -181,6 +207,25 @@ function showProjectDetails(project) {
     modalText.className = 'modal-text';
     modalText.innerText = lang() ? projectData[project].text : projectData[project].textEN;
     modalContent.appendChild(modalText);
+
+    const mySwiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    mySwiper.update();
 }
 
 projectData.forEach((item, index) => {
