@@ -1034,6 +1034,11 @@ footer p {
 }
 
 @media (max-width: 786px) {
+    html, body {
+        scroll-snap-type: none;
+        scroll-snap-stop: none;
+    }
+    
     .profile-content {
         width: 100%;
         min-width: 320px;

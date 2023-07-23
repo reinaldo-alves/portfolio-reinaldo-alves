@@ -231,25 +231,27 @@ const siteConhecendoOBrasil = {
         './conhecendoobrasil/CoBimage.jpg',
         './conhecendoobrasil/CoBvideo.jpg',
         './conhecendoobrasil/CoBphoto.jpg',
+        './conhecendoobrasil/CoBstate.jpg',
+        './conhecendoobrasil/CoBmun.jpg',
         './conhecendoobrasil/CoBcuriosity.jpg',
         './conhecendoobrasil/CoBcontact.jpg'
     ],
     links: [
         {
-            href: 'https://reinaldo-alves.github.io/site-CoB/',
+            href: 'https://conhecendoobrasil.vercel.app/',
             class: 'fa-solid fa-earth-americas',
             span: 'Website'
         },
         {
-            href: 'https://github.com/reinaldo-alves/site-CoB',
+            href: 'https://github.com/reinaldo-alves/app-CoB',
             class: 'fa-brands fa-github',
             span: 'GitHub'
         },
     ],
     technologies: [
         {
-            alt: 'HTML5',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            alt: 'React',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
             style: ''
         },
         {
@@ -258,8 +260,8 @@ const siteConhecendoOBrasil = {
             style: ''
         },
     ],
-    text: 'Este é um website que apresenta o canal do Youtube Conhecendo o Brasil, um canal de curiosidades. A página mostra imagens de todos os estados brasileiros, tem uma seção de curiosidades e também links para as redes onde são postados os conteúdos principais. O site Conhecendo o Brasil foi completamente desenvolvido com HTML e CSS.',
-    textEN: 'This is a website that presents the Youtube channel Conhecendo o Brasil, a channel of curiosities about Brazil. The page shows images of all Brazilian states, has a curiosities section and also links to the networks where the main contents are posted. The Conhecendo o Brasil website was completely developed with HTML and CSS.'
+    text: 'Este é um website que apresenta o canal do Youtube Conhecendo o Brasil, um canal de curiosidades. Na página inicial, a aplipação consome a API do Youtube para mostrar informações sobre um vídeo selecionado do canal, enquanto que na página Municípios há um guia que mostra dados de todos os municípios brasileiros, obtidos a partir da API do IBGE. O website também tem uma seção de curiosidades e links para as redes onde são postados os conteúdos principais. O site Conhecendo o Brasil foi desenvolvido com o framework React e estilizado com CSS.',
+    textEN: 'This is a website that presents the Youtube channel Conhecendo o Brasil (Getting to Know Brazil), a channel of curiosities. On the homepage, the application consumes the Youtube API to show information about a selected video from the channel, while on the Municípios page there is a guide that shows data from all Brazilian municipalities, obtained from the IBGE API. The website also has a fun facts section and links to the networks where the main contents are posted. The website Conhecendo o Brasil was developed with the React framework and styled with CSS.'
 }
 
 const reproducaoFacebook = {
@@ -297,4 +299,4 @@ const reproducaoFacebook = {
     textEN: "Website that reproduces the interface of Facebook's login screen and homepage, with a system that allows navigation between them through a button. This reproduction of the Facebook interface was completely developed with HTML and CSS."
 }
 
-export const projectData = [reproducaoFacebook, siteConhecendoOBrasil, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, youtubeClone, whatsAppWebClone];
+export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, youtubeClone, whatsAppWebClone];
