@@ -4,7 +4,7 @@
 
 Portfolio Reinaldo Alves é um website com o objetivo de apresentar os projetos que desenvolvi, bem como as tecnologias que domino e as minhas informações de contato. O portfolio foi constuído em uma única página usando HTML e CSS, enquanto que as funcionalidades do website foram desenvolvidas em Javascript.
 
-O website está hospedado no Netlify, [clique aqui](https://amazing-rugelach-77a654.netlify.app/) para acessar.
+O website está hospedado no Netlify, [clique aqui](https://reinaldoalvesdev.netlify.app/) para acessar.
 
 ## Contribua com o Portfolio Reinaldo Alves:
 
