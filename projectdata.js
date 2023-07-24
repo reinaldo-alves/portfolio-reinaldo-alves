@@ -8,11 +8,11 @@ const whatsAppWebClone = {
         './whatsappwebclone/signup.jpg'
     ],
     links: [
-        {
-            href: '#',
-            class: 'fa-solid fa-earth-americas',
-            span: 'Website'
-        },
+        // {
+        //     href: '#',
+        //     class: 'fa-solid fa-earth-americas',
+        //     span: 'Website'
+        // },
         {
             href: 'https://github.com/reinaldo-alves/whatsapp-front',
             class: 'fa-brands fa-github',
@@ -53,13 +53,21 @@ const whatsAppWebClone = {
 const youtubeClone = {
     title: 'Youtube Clone',
     titleEN: 'Youtube Clone',
-    image: ['./YTimage.jpg'],
+    image: [
+        './youtubeclone/home.jpg',
+        './youtubeclone/shorts.jpg',
+        './youtubeclone/profile.jpg',
+        './youtubeclone/search.jpg',
+        './youtubeclone/login.jpg',
+        './youtubeclone/signup.jpg',
+        './youtubeclone/addvideo.jpg'
+    ],
     links: [
-        {
-            href: '#',
-            class: 'fa-solid fa-earth-americas',
-            span: 'Website'
-        },
+        // {
+        //     href: '#',
+        //     class: 'fa-solid fa-earth-americas',
+        //     span: 'Website'
+        // },
         {
             href: 'https://github.com/reinaldo-alves/youtube-clone',
             class: 'fa-brands fa-github',
