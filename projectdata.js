@@ -1,3 +1,62 @@
+const sistemaUranor = {
+    title: 'Sistema Uranor',
+    titleEN: 'Uranor System',
+    image: [
+        './sistemauranor/homepage.jpg',
+        './sistemauranor/consulta.jpg',
+        './sistemauranor/exibir.jpg',
+        './sistemauranor/cantos.jpg',
+        './sistemauranor/criar.jpg',
+        './sistemauranor/login.jpg'
+    ],
+    links: [
+        // {
+        //     href: '#',
+        //     class: 'fa-solid fa-earth-americas',
+        //     span: 'Website'
+        // },
+        {
+            href: 'https://github.com/reinaldo-alves/sistema-uranor',
+            class: 'fa-brands fa-github',
+            span: 'GitHub(Frontend)'
+        },
+        {
+            href: 'https://github.com/reinaldo-alves/api-devas',
+            class: 'fa-brands fa-github',
+            span: 'GitHub(Backend)'
+        },
+    ],
+    technologies: [
+        {
+            alt: 'React',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            style: ''
+        },
+        {
+            alt: 'TypeScript',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            style: ''
+        },
+        {
+            alt: 'NodeJS',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+            style: ''
+        },
+        {
+            alt: 'MySQL',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+            style: ''
+        },
+        {
+            alt: 'Docker',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+            style: ''
+        },
+    ],
+    text: 'Sistema Uranor é uma aplicação construída para facilitar os serviços administrativos de um templo, através do gerenciamento de membros e acesso a documentos internos. Este sistema é utilizado por usuários cadastrados com três diferentes níveis de acesso, que uma vez logados, podem consultar, cadastrar ou alterar as informações de cada membro, bem como gerar relatórios individualizados com base nestas informações. Para construir a interface do Sistema Uranor, foi utilizado o framework React com Typescript e Styled Components, além de bibliotecas como MUI, pdfMake e SweetAlert, enquanto que no servidor foi utilizado Node.js com Typescript, com requisições através do Axios, upload de arquivos com Multer e integração com banco de dados MySQL. Atualmente, o sistema funciona localmente em uma máquina do templo e é inicializado através de Docker Compose.',
+    textEN: 'Uranor System is an application built to facilitate the administrative services of a temple, through member management and access to internal documents. This system is used by registered users with three different access levels, who, once logged in, can consult, register or change the information of each member, as well as generate individualized reports based on this information. React framework with Typescript and Styled Components was used to build the Uranor System interface, as well as libraries such as MUI, pdfMake and SweetAlert, while Node.js with Typescript was used on the server, with requests through Axios, file uploads with Multer and integration with MySQL database. Currently, the system runs locally on a temple computer and is initialized through Docker Compose.'
+}
+
 const whatsAppWebClone = {
     title: 'WhatsApp Web Clone',
     titleEN: 'WhatsApp Web Clone',
@@ -307,4 +366,4 @@ const reproducaoFacebook = {
     textEN: "Website that reproduces the interface of Facebook's login screen and homepage, with a system that allows navigation between them through a button. This reproduction of the Facebook interface was completely developed with HTML and CSS."
 }
 
-export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, youtubeClone, whatsAppWebClone];
+export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, youtubeClone, whatsAppWebClone, sistemaUranor];
