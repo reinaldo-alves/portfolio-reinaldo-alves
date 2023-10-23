@@ -169,6 +169,54 @@ const youtubeClone = {
     textEN: 'Youtube Clone is an application that reproduces some features of Youtube. This system allows the user to create an account with name, email, password and profile picture and log in through this account, so they can add their own videos and shorts, with information such as title, category, description and even thumbnail. In addition to working with videos created in the application, Youtube Clone is also integrated with the Youtube API, so it is possible to display cards of the most popular videos on the Google platform, both on the homepage and on the category pages and in searches. To build the Youtube Clone interface, the React framework with TypeScript and Styled Components was used, while for the backend Node.js was used with requests through Axios and integration with the MariaDB database.'
 }
 
+const instagramClone = {
+    title: 'Instagram Clone',
+    titleEN: 'Instagram Clone',
+    image: [
+        './instagramclone/login.jpg',
+        './instagramclone/feeda.jpg',
+        './instagramclone/post.jpg',
+        './instagramclone/upload.jpg',
+        './instagramclone/feedb.jpg'
+    ],
+    links: [
+        {
+            href: 'https://instagram-clone-reinaldo.web.app/',
+            class: 'fa-solid fa-earth-americas',
+            span: 'Website'
+        },
+        {
+            href: 'https://github.com/reinaldo-alves/instagram-clone',
+            class: 'fa-brands fa-github',
+            span: 'GitHub'
+        },
+    ],
+    technologies: [
+        {
+            alt: 'React',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            style: ''
+        },
+        {
+            alt: 'TypeScript',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            style: ''
+        },
+        {
+            alt: 'CSS3',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
+        },
+        {
+            alt: 'Firebase',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+            style: ''
+        }
+    ],
+    text: 'Instagram Clone é uma aplicação que reproduz algumas funcionalidades da rede social Instagram. Atavés deste sistema é possível criar uma conta de usuário para autenticação com email e senha, além de postar fotos e interagir por meio de comentários e curtidas. O client do Instagram Clone foi construída usando React com Typescript e CSS, enquanto que o backend foi totalmente criada com Firebase, usando as funcionalidades de autenticação, armazenamento e banco de dados',
+    textEN: 'Instagram Clone is an application that reproduces some features of Instagram social network. Through this system it is possible to create a user account for authentication with email and password, in addition to posting photos and interacting through comments and likes. The Instagram Clone client was built using React with Typescript and CSS, while the backend was created entirely with Firebase, using authentication, storage and database functionalities'
+}
+
 const starWarsEncyclopedia = {
     title: 'Star Wars Encyclopedia',
     titleEN: 'Star Wars Encyclopedia',
@@ -366,4 +414,4 @@ const reproducaoFacebook = {
     textEN: "Website that reproduces the interface of Facebook's login screen and homepage, with a system that allows navigation between them through a button. This reproduction of the Facebook interface was completely developed with HTML and CSS."
 }
 
-export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, youtubeClone, whatsAppWebClone, sistemaUranor];
+export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, instagramClone, youtubeClone, whatsAppWebClone, sistemaUranor];
