@@ -15,7 +15,7 @@
             <ul>
                 <li id="homepage-li">Página Inicial</li>
                 <li id="aboutMe-li">Sobre mim</li>
-                <li id="solution-li">Soluções</li>
+                <li id="solution-li">Serviços</li>
                 <li id="project-li">Projetos</li>
                 <li id="contact-li">Contato</li>
             </ul>
@@ -25,7 +25,7 @@
             <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
         </div>
     </header>
-    <div class="hero-container">
+    <div class="hero-container" id="homepage">
         <div class="hero-content">
             <div class="title-container">
                 <h1>Reinaldo Alves</h1>
@@ -42,7 +42,7 @@
             <img alt="Reinaldo" src="./mainphoto.png"/>
         </div>
     </div>
-    <div class="page-container" id="profile">
+    <section id="aboutMe">
         <div class="content-container">
             <h2 class="page-title">Quem sou eu?</h2>
             <div class="profile-content">
@@ -71,92 +71,90 @@
                     Eu sou um desenvolvedor web fullstack de Recife - PE que está sempre em busca de conhecimentos e novas tecnologias, pois acredito que a programação é uma importante ferramenta que nos permite resolver nossos problemas e tornar nossas atividades diárias mais fáceis. Atualmente trabalho como freelancer, mas também estou aberto a oportunidades de trabalho onde eu possa contribuir com o crescimento da empresa e do projeto. Tenho formação técnica em eletricidade industrial e mestrado em Engenharia Química com ênfase em biocombustíveis, podendo agregar experiências em projetos relacionados a estas áreas. Já desenvolvi diferentes tipos de aplicações, para diferentes propósitos, mas sempre com foco nos detalhes, de modo a promover uma melhor experiência ao usuário. Verifique meus trabalhos na seção Projetos deste site e sinta-se à vontade para entrar em contato.  
                 </p>
             </div>
+            <div class="divider"></div>
+            <div class="technologies-container">
+                <h2 class="details">Tecnologias utilizadas</h2>
+                <div class="technologies-content">
+                    <div class="technologies-card">
+                        <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <span>HTML5</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <span>CSS3</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <span>React</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        <span>Nodejs</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                        <span>MySQL</span>
+                    </div>
+                    <div class="technologies-card"> 
+                        <img alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                        <span>Git</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="SocketIO" style="filter: invert(1);" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
+                        <span>SocketIO</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                        <span>Firebase</span>
+                    </div>
+                    <div class="technologies-card">
+                        <img alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="page-container" id="service">
+    </section>
+    <section id="solution">
         <div class="content-container">
             <div class="service-container">
-                <div class="products-container">
-                    <h2 class="page-title">Serviços oferecidos</h2>
-                    <div class="product-content">
-                        <h3>Websites</h3>
-                        <p>Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</p>
+                <h2 class="page-title">Serviços oferecidos</h2>
+                <div class="service-content" >
+                    <div class="service-card banner-1">
+                        <div class="service-background">
+                            <h3>Landing pages</h3>
+                            <p>Uma landing page é uma página web projetada para converter visitantes em ações, como inscrições, compras ou downloads. Elas se destacam por sua simplicidade, com conteúdo direcionado e um CTA (chamada para ação) proeminente. Bastante usada em campanhas de marketing.</p>
+                        </div>
                     </div>
-                    <div class="product-content">
-                        <h3>Aplicações web</h3>
-                        <p>Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL</p>
+                    <div class="service-card banner-2">
+                        <div class="service-background">
+                            <h3>Sites institucionais</h3>
+                            <p>Um site institucional é a face digital de uma empresa, fornecendo informações sobre sua história, valores, serviços e contato. É uma plataforma que estabelece credibilidade e ajuda a marca a construir confiança e autoridade no mundo digital, gerando uma conexão com o cliente.</p>
+                        </div>
                     </div>
-                    <ul class="tabs">
-                        <li class="tab active-tab" id="tab-1">
-                            <span>Websites</span>
-                            <img alt="seta" src="./arrow-left.png" />                            
-                        </li>
-                        <div class="tabs-content" id="tabs-content-1">Páginas web para as mais diversas finalidades, como lojas, profissionais autônomos (advogados, corretores, cabelereiros, etc) e artistas, além de landing pages para quem vende algum produto ou serviço na internet. Os websites são desenvolvidos em HTML/CSS ou em React, de acordo com a necessidade ou preferência do cliente</div>
-                        <li class="tab" id="tab-2">
-                            <span>Aplicações Web</span>
-                            <img alt="seta" src="./arrow-left.png" />
-                        </li>
-                        <div class="tabs-content" id="tabs-content-2" style="display: none;">Sistemas com funcionalidades mais complexas e integrados com bancos de dados, como sistemas de agendamento de serviços, de gestão de estoque, de cadastro de funcionários/clientes, plataformas EAD, entre outros. A interface dos sistemas é desenvolvida em React, enquanto que o servidor é desenvolvido em Node.js com banco de dados MariaDB ou MySQL</div>
-                    </ul>
-                </div>
-                <div class="vertical-divider"></div>
-                <div class="technologies-container">
-                    <h2 class="page-title">Tecnologias utilizadas</h2>
-                    <div class="technologies-content">
-                        <div class="technologies-card">
-                            <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <span>HTML5</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <span>CSS3</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-                            <span>Tailwind</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-                            <span>TypeScript</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                            <span>React</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="Nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                            <span>Nodejs</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-                            <span>MySQL</span>
-                        </div>
-                        <div class="technologies-card"> 
-                            <img alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                            <span>Git</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="SocketIO" style="filter: invert(1);" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
-                            <span>SocketIO</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-                            <span>Firebase</span>
-                        </div>
-                        <div class="technologies-card">
-                            <img alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-                            <span>Docker</span>
+                    <div class="service-card banner-3">
+                        <div class="service-background">
+                            <h3>Aplicações web</h3>
+                            <p>Sistemas com funcionalidades mais complexas e que funcionam diretamente no navegador, como redes sociais, sistemas de agendamento de serviços, de gestão de estoque e de cadastro de funcionários/clientes. São bastante acessíveis e flexíveis, podendo ser utilizadas em qualquer máquina conectada à internet</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page-container" id="project">
+    </section>
+    <section id="project">
         <div class="content-container">
             <h2 class="page-title">Meus Projetos</h2>
             <p class="details">Clique no projeto para obter mais detalhes</p>
@@ -206,8 +204,8 @@
         <div class="modal" id="modal">
             <div class="modal-content" id="modal-content"></div>
         </div>
-    </div>
-    <div class="page-container" id="contact">
+    </section>
+    <section id="contact">
         <div class="content-container">
             <h2 class="page-title">Entre em contato comigo</h2>
             <div class="contact-content">
@@ -233,7 +231,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
         <p>©2023 Todos os direitos reservados - Desenvolvido por Reinaldo Alves</p>
         <div class="social-content">
@@ -260,6 +258,3 @@
     <script type="module" src="./script.js"></script>
 </body>
 </html>
-
-<!-- O que falta
-1 - Criar link para vídeos e fotos do Youtube Clone -->

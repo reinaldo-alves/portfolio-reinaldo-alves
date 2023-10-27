@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
     scrollbar-width: 8px;
     scrollbar-color: #8c8c8c;
 }
@@ -32,7 +33,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     z-index: 5;
     border-bottom: 1px solid #d870db;
 }
@@ -53,7 +54,6 @@ ul {
 }
 
 li {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 21px;
     cursor: pointer;
@@ -96,18 +96,19 @@ li:hover {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    scroll-snap-align: start;
+    border-bottom: 2px solid #d870db;
 }
 
 .hero-content {
     height: 100%;
-    width: 60%;
+    width: calc(100% - 450px);
     min-width: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding-top: 50px;
+    padding-left: 40px;
     z-index: 4;
 }
 
@@ -117,22 +118,19 @@ li:hover {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
-    font-size: 100px;
+    font-size: 95px;
     text-shadow: 0 0 50px black;
     border-bottom: 2px solid #d870db;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 35px;
     text-shadow: 0 0 50px black;
 }
 
 .slogan {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     text-align: center;
     width: 500px;
@@ -186,34 +184,25 @@ h2 {
 }
 
 .mainphoto {
-    height: 100%;
-    min-height: 625px;
+    height: calc(100vh - 52px);
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     filter: drop-shadow(0 0 50px #d870db);
-    overflow: hidden;
 }
 
 .mainphoto img {
     height: 100%;
 }
 
-.page-container {
-    height: 100vh;
-    min-height: 625px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: #333;
+section {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    scroll-snap-align: start;
 }
 
-#profile {
+#aboutMe {
     background-image: url('./nasa-Q1p7bh3SHj8-unsplash.jpg');
 }
 
@@ -225,7 +214,7 @@ h2 {
     background-image: url('./digital-contact-black.jpg');
 }
 
-#service {
+#solution {
     background-image: url('./765090-most-popular-technology-background-images-1920x1080-hd-for-mobile.jpg');
 }
 
@@ -233,24 +222,25 @@ h2 {
 .content-container {
     color: #333;
     width: 100%;
-    height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #d870db;
 }
 
 .page-title {
     font-size: 48px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .profile-content {
     width: 60%;
     min-width: 850px;
-    max-width: 1000px;
-    height: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,7 +266,6 @@ h2 {
 }
 
 .name-text {
-    font-family: 'Oswald', sans-serif;
     font-size: 28px;
     margin: 15px 0;
     color: #fff;
@@ -305,7 +294,6 @@ i:hover {
     border: none;
     background-color: #d870db;
     color: #000;
-    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     margin-top: 25px;
 }
@@ -315,94 +303,110 @@ i:hover {
 }
 
 .profile-sinopse {
-    width: 490px;
-    max-height: 370px;
+    width: 60%;
     padding: 10px;
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 17px;
     text-shadow: 0 0 50px black;
-    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
-    border: 1px solid #d870db;
-    border-radius: 8px;
-    box-shadow: 0 0 20px #d870db;
-    overflow-y: auto;
 }
 
 .service-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    height: 100%;
     width: 100%;
-}
-
-.products-container {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding-right: 20px;
 }
 
-.product-content {
+.service-content {
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.service-card {
+    height: 400px;
+    width: 30%;
+    max-width: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 1px solid #d870db;
+    border-radius: 8px;
+    transition: 1s;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.product-content h3 {
-    font-family: 'Oswald', sans-serif;
+    justify-content: flex-start;
     color: #fff;
+}
+
+.service-card .service-background {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
     font-size: 28px;
     text-shadow: 0 0 50px black;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.product-content p {
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
+.service-card p {
+    opacity: 0;
     font-size: 17px;
-    text-shadow: 0 0 50px black;    
+    text-shadow: 0 0 50px black; 
+    text-align: center;
+    transition: 1s;
 }
 
-.tabs {
-    display: none;
+.service-card:hover {
+    transform: scale(1.02);
 }
 
-.tabs-content {
-    display: none;
+.service-card:hover .service-background {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.vertical-divider {
-    height: 100%;
-    border-left: 4px solid #ccc;
+.service-card:hover p {
+    opacity: 1;
+}
+
+.banner-1 {
+    background-image: url('https://storage.googleapis.com/website-production/uploads/2016/01/0009_What-is-a-Mobile-App-Landing-Page-770x384.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://blueatlas-13bc3.kxcdn.com/wp-content/uploads/2018/07/website-graphic-1.jpeg');
+}
+
+.banner-3 {
+    background-image: url('https://cybercraftinc.com/wp-content/uploads/2021/11/develop-a-web-application.webp');
+}
+
+.divider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px 0;
 }
 
 .technologies-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .technologies-content {
     width: 100%;
-    max-height: 100%;
-    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
 }
 
 .technologies-card {
@@ -415,15 +419,11 @@ i:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
     gap: 10px;
     width: 120px;
-    min-width: 100px;
-    max-width: calc((100% - 40px)/5);
 }
 
 .technologies-card span {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 18px;
     text-shadow: 0 0 50px black;
@@ -505,7 +505,6 @@ i:hover {
 .project-title {
     width: 100%;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
     font-size: 28px;
     text-align: center;
 }
@@ -569,6 +568,7 @@ i:hover {
 .exit-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #d870db;
+    padding-bottom: 2px;
 }
 
 .modal-image {
@@ -640,7 +640,6 @@ i:hover {
     align-items: flex-end;
     gap: 10px;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
     grid-area: 2 / 2 / 4 / 4;
 }
 
@@ -670,7 +669,6 @@ i:hover {
 }
 
 .modal-info a span {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 20px;
     display: -webkit-box;
@@ -702,7 +700,6 @@ i:hover {
 
 .modal-text {
     color: #fff;
-    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     text-align: center;
     grid-area: 4 / 1 / 5 / 3;
@@ -719,12 +716,11 @@ i:hover {
 }
 
 .details {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 24px;
     text-shadow: 0 0 50px #000;
     text-align: center;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 form {
@@ -742,7 +738,6 @@ form {
 
 label {
     display: block;
-    font-family: 'Oswald', sans-serif;
     color: #fff;
 }
 
@@ -751,7 +746,6 @@ input {
     width: 100%;
     border-radius: 8px;
     height: 25px;
-    font-family: 'Oswald', sans-serif;
     font-size: 15px;
     padding: 5px;
     border: none;
@@ -762,7 +756,6 @@ textarea {
     width: 100%;
     height: 120px;
     border-radius: 8px;
-    font-family: 'Oswald', sans-serif;
     font-size: 15px;
     padding: 5px;
     border: none;
@@ -776,7 +769,6 @@ button {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Oswald', sans-serif;
     background-color: #d870db;
     font-size: 17px;
     font-weight: bold;
@@ -802,14 +794,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     gap: 10px;
-    border-top: 1px solid #d870db;
-    scroll-snap-align: end;
 }
 
 footer p {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 16px;
     text-align: center;
@@ -831,7 +820,6 @@ footer p {
 }
 
 .social-content a span {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 18px;
 }
@@ -855,6 +843,10 @@ footer p {
 @media (min-height: 80vw) {
     .hero-container {
         justify-content: center;
+    }
+    
+    .hero-content {
+        padding-left: 0;
     }
     
     .mainphoto {
@@ -902,11 +894,14 @@ footer p {
     #technologies-container {
         grid-area: 3 / 2 / 4 / 3;
     }
-}
 
-@media (max-width: 965px) {
     .hero-container {
         justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding-left: 0;
     }
     
     .mainphoto {
@@ -925,90 +920,8 @@ footer p {
         justify-content: center;
     }
 
-    .product-content {
-        display: none;
-    }
-
-    .tabs {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        position: relative;
-        margin: 15px 0;
-    }
-
-    .tab {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 20px;
-        border: 1px solid #fff;
-        border-radius: 8px;
-        background-color: rgba(0,0,0,0.5);
-        height: 40px;
-        font-family: 'Oswald', sans-serif;
-        color: #fff;
-        font-size: 20px;
-        text-shadow: 0 0 50px black;
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    
-    .tab:hover {
-        box-shadow: 0 0 20px #d870db;
-        border-color: #d870db;
-        color: #d870db;
-    }
-
-    .tab img {
-        width: 40px;
-        height: 40px;
-        filter: invert(1);
-        rotate: -90deg;
-    }
-
-    .active-tab {
-        height: 62px;
-        font-size: 28px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .active-tab img {
-        rotate: 90deg;
-    }
-
-    .tabs-content {
-        display: block;
-        width: 100%;
-        height: 200px;
-        border: 1px solid #fff;
-        border-top: none;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        padding: 10px;
-        font-family: 'Oswald', sans-serif;
-        font-size: 17px;
-        color: #fff;
-        text-shadow: 0 0 50px black; 
-    }
-    
-    .technologies-card {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        width: 120px;
-        min-width: 120px;
-        max-width: calc((100% - 20px)/3);
-    }
-    
-    .technologies-card img {
-        width: 30px;
-        height: 30px;
-        max-width: 30px;
+    .service-card p {
+        font-size: 14px;
     }
 
     .details {
@@ -1030,6 +943,10 @@ footer p {
 
     .project-title {
         font-size: 24px;
+    }
+
+    .social-content a span {
+        font-size: 14px;
     }
 }
 
@@ -1076,20 +993,25 @@ footer p {
     }
 
     .profile-sinopse {
-        width: 450px;
-        max-height: calc(100vh - 407px);
-        min-height: 218px;
+        width: 100%;
     }
 
-    .tabs-content {
-        height: 250px;
+    .service-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
     }
 
     .social-content {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        margin-top: 10px;
+        gap: 15px;
+        margin-top: 15px;
     }
 
 }
@@ -1103,14 +1025,6 @@ footer p {
 
     .products-container {
         padding: 0;
-    }
-
-    .tabs-content {
-        height: auto;
-    }
-
-    .vertical-divider {
-        display: none;
     }
 
     .technologies-container {
@@ -1127,14 +1041,6 @@ footer p {
 
     nav {
         display: none;
-    }
-    
-    .tabs-content {
-        font-size: 14px;
-    }
-    
-    .technologies-card {
-        max-width: calc((100% - 30px)/4);
     }
 
     .modal-content {
@@ -1166,7 +1072,7 @@ footer p {
 
 }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
     .hero-container, .hero-content {
         width: 100%;
         min-width: 250px;
@@ -1187,25 +1093,33 @@ footer p {
 
     .profile-card {
         width: calc(100% - 40px);
-        padding: 10px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .technologies-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 120px;
+    }
+    
+    .technologies-card img {
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
     }
 
     .name-text {
         margin-top: 0;
-    }
-
-    .profile-sinopse {
-        width: calc(100% - 40px);
-        max-height: calc(100vh - 339px);
-        min-height: 286px;
-    }
-
-    .tab {
-        font-size: 16px;
-    }
-
-    .active-tab {
-        font-size: 24px;
     }
 
     .project-content {
@@ -1236,36 +1150,6 @@ footer p {
 @media (max-width: 478px) {
     h1 {
         font-size: 50px;
-    }
-    
-    .profile-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .profile-image {
-        height: 100px;
-        width: 100px;
-    }
-
-    .icons-container {
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .profile-button {
-        margin-top: 15px;
-    }
-
-    .profile-sinopse {
-        width: calc(100% - 40px);
-        max-height: calc(100vh - 416px);
-        min-height: 209px;
-    }
-
-    .technologies-card {
-        padding: 5px;
     }
 
     .modal-info a i {

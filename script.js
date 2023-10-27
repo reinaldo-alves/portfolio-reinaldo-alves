@@ -1,26 +1,24 @@
 import { projectData } from "./projectdata.js";
 
-const homepageLink = document.getElementById('homepage-li');
-const aboutMeLink = document.getElementById('aboutMe-li');
-const solutionLink = document.getElementById('solution-li');
-const projectLink = document.getElementById('project-li');
-const contactLink = document.getElementById('contact-li');
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('ul li');
 
-function scroll(pages) {
-    if (window.innerHeight > 625) {
-        const scrollPixels = window.innerHeight * pages;
-        window.scrollTo({top: scrollPixels, behavior: 'smooth'})
-    } else {
-        const scrollPixels = 625 * pages;
-        window.scrollTo({top: scrollPixels, behavior: 'smooth'})
+    links.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
+
+    function scrollToSection(event) {
+        const linkId = event.currentTarget.getAttribute('id');
+        const targetId = linkId.split("-")[0] 
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            event.preventDefault();
+            const scrollPosition = targetSection.offsetTop - 50;
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        }
     }
-}
-
-homepageLink.addEventListener('click', () => scroll(0));
-aboutMeLink.addEventListener('click', () => scroll(1));
-solutionLink.addEventListener('click', () => scroll(2));
-projectLink.addEventListener('click', () => scroll(3));
-contactLink.addEventListener('click', () => scroll(4));
+});
 
 const cardsContainer = document.getElementById('cards-container');
 const arrowLeft = document.getElementById('arrow-left');
@@ -85,28 +83,6 @@ function lastButton() {
 arrowLeft.addEventListener('click', () => firstButton());
 arrowRight.addEventListener('click', () => lastButton());
 
-const tabWeb = document.getElementById('tab-1');
-const tabApp = document.getElementById('tab-2');
-const tabsContentWeb = document.getElementById('tabs-content-1');
-const tabsContentApp = document.getElementById('tabs-content-2');
-
-function activeWeb() {
-    tabWeb.classList.add('active-tab');
-    tabApp.classList.remove('active-tab');
-    tabsContentWeb.style.display = 'block'
-    tabsContentApp.style.display = 'none'
-}
-
-function activeApp() {
-    tabApp.classList.add('active-tab');
-    tabWeb.classList.remove('active-tab');
-    tabsContentApp.style.display = 'block'
-    tabsContentWeb.style.display = 'none'
-}
-
-tabWeb.addEventListener('click', () => activeWeb());
-tabApp.addEventListener('click', () => activeApp());
-
 function showProjectDetails(project) {
     const lang = () => {
         if (document.documentElement.lang === 'pt-br') {
@@ -124,7 +100,7 @@ function showProjectDetails(project) {
     
     const exitButton = document.createElement('div');
     exitButton.className = 'exit-button';
-    exitButton.innerText = '×';
+    exitButton.innerText = '\u00D7';
     exitButton.onclick = () => {modal.style.visibility = 'hidden'};
     modalContent.appendChild(exitButton);
 
