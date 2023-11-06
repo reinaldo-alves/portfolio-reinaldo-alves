@@ -1,20 +1,18 @@
 import { projectData } from "./projectdata.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('ul li');
+    const contactButtons = document.querySelectorAll('.contact-button')
 
-    links.forEach(link => {
-        link.addEventListener('click', scrollToSection);
-    });
+    contactButtons.forEach(link => {
+        link.addEventListener('click', scrollToContact);
+    })
 
-    function scrollToSection(event) {
-        const linkId = event.currentTarget.getAttribute('id');
-        const targetId = linkId.split("-")[0] 
-        const targetSection = document.getElementById(targetId);
+    function scrollToContact(event) {
+        const contactSection = document.getElementById('contact');
 
-        if (targetSection) {
+        if (contactSection) {
             event.preventDefault();
-            const scrollPosition = targetSection.offsetTop - 50;
+            const scrollPosition = contactSection.offsetTop;
             window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
         }
     }

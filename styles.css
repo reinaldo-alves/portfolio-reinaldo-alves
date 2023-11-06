@@ -26,43 +26,6 @@ html, body {
     background-color: #000;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 5;
-    border-bottom: 1px solid #d870db;
-}
-
-nav {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-li {
-    color: #fff;
-    font-size: 21px;
-    cursor: pointer;
-}
-
-li:hover {
-    color: #d870db;
-}
-
 .language-container {
     height: 50px;
     display: flex;
@@ -72,6 +35,7 @@ li:hover {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 5;
 }
 
 .language-container img {
@@ -86,8 +50,7 @@ li:hover {
 }
 
 .hero-container {
-    height: 100vh;
-    min-height: 625px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,12 +65,10 @@ li:hover {
 .hero-content {
     height: 100%;
     width: calc(100% - 450px);
-    min-width: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding-top: 50px;
     padding-left: 40px;
     z-index: 4;
 }
@@ -136,6 +97,25 @@ h2 {
     width: 500px;
     font-size: 24px;
     text-shadow: 0 0 50px black;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    height: 60px;
+    width: 300px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d870db;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px 12px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .arrows {
@@ -184,9 +164,9 @@ h2 {
 }
 
 .mainphoto {
-    height: calc(100vh - 52px);
+    height: 699px;
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 0;
     filter: drop-shadow(0 0 50px #d870db);
 }
@@ -287,21 +267,6 @@ i:hover {
     transform: scale(1.05);
 }
 
-.profile-button {
-    width: 150px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    background-color: #d870db;
-    color: #000;
-    cursor: pointer;
-    margin-top: 25px;
-}
-
-.profile-button:hover {
-    transform: scale(1.05);
-}
-
 .profile-sinopse {
     width: 60%;
     padding: 10px;
@@ -392,7 +357,8 @@ i:hover {
 .divider {
     width: 100%;
     max-width: 1200px;
-    margin: 30px 0;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .technologies-container {
@@ -709,10 +675,8 @@ i:hover {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    padding-bottom: 10px;
+    gap: 40px;
 }
 
 .details {
@@ -728,7 +692,7 @@ form {
     flex-direction: column;
     justify-content: space-between;
     background-color: #000;
-    width: 450px;
+    width: 500px;
     gap: 20px;
     padding: 20px;
     border: 1px solid #d870db;
@@ -745,9 +709,9 @@ input {
     display: block;
     width: 100%;
     border-radius: 8px;
-    height: 25px;
-    font-size: 15px;
-    padding: 5px;
+    height: 35px;
+    font-size: 18px;
+    padding: 8px;
     border: none;
 }
 
@@ -756,36 +720,14 @@ textarea {
     width: 100%;
     height: 120px;
     border-radius: 8px;
-    font-size: 15px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 8px;
     border: none;
     resize: none;
 }
 
-button {
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #d870db;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 2px 12px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-button:active {
-    background-color: #fff;
-    cursor: pointer;
-    color: #d870db;
-    border: solid 2px;
-    border-color: #d870db;
-    padding: 0px 8px;
+#button {
+    margin: 20px auto;
 }
 
 footer {
@@ -795,7 +737,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer p {
@@ -805,18 +747,30 @@ footer p {
 }
 
 .social-content {
-    width: 100%;
-    max-width: 900px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px
 }
 
 .social-content a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     color: #fff;
+    width: 250px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    border: 1px solid #d870db;
+    box-shadow: 0 0 15px #d870db;
+}
+
+.icon-wraper {
+    height: 32px;
+    width: 32px;
+    text-align: center;
 }
 
 .social-content a span {
@@ -840,20 +794,6 @@ footer p {
     }
 }
 
-@media (min-height: 80vw) {
-    .hero-container {
-        justify-content: center;
-    }
-    
-    .hero-content {
-        padding-left: 0;
-    }
-    
-    .mainphoto {
-        display: none;
-    }
-}
-
 @media (max-width: 1165px) {
 
     .modal-content {
@@ -862,19 +802,6 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-    header {
-        justify-content: space-between;
-    }
-
-    .language-container {
-        position: static;
-    }
-    
-    nav {
-        width: 100%;
-        margin: 0 20px;
-    }
-
     .modal-content {
         grid-template-columns: 1fr 1fr 0;
     }
@@ -924,10 +851,6 @@ footer p {
         font-size: 14px;
     }
 
-    .details {
-        font-size: 18px;
-    }
-
     .project-content {
         gap: 10px;
     }
@@ -945,8 +868,8 @@ footer p {
         font-size: 24px;
     }
 
-    .social-content a span {
-        font-size: 14px;
+    form {
+        width: 450px;
     }
 }
 
@@ -958,7 +881,7 @@ footer p {
     
     .profile-content {
         width: 100%;
-        min-width: 320px;
+        min-width: 100px;
         flex-direction: column;
         justify-content: space-around;
         gap: 15px;
@@ -968,13 +891,13 @@ footer p {
     .profile-card {
         display: grid;
         grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 1fr 1fr;
         column-gap: 20px;
         width: 450px;
     }
 
     .profile-image {
-        grid-area: 1 / 1 / 4 / 2;
+        grid-area: 1 / 1 / 3 / 2;
     }
 
     .name-text {
@@ -984,12 +907,6 @@ footer p {
 
     .icons-container {
         grid-area: 2 / 2 / 2 / 3;
-    }
-
-    .profile-card a {
-        max-width: 150px;
-        justify-self: center;
-        grid-area: 3 / 2 / 4 / 3;
     }
 
     .profile-sinopse {
@@ -1007,11 +924,24 @@ footer p {
         height: auto;
     }
 
-    .social-content {
-        flex-direction: column;
+    .contact-content {
+        flex-direction: column-reverse;
         align-items: center;
-        gap: 15px;
-        margin-top: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .social-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .social-content a {
+        flex-direction: column;
+        width: 200px;
+        gap: 10px;
     }
 
 }
@@ -1033,16 +963,6 @@ footer p {
 }
 
 @media (max-width: 696px) {
-    header {
-        background-color: transparent;
-        border: none;
-        justify-content: flex-end;
-    }
-
-    nav {
-        display: none;
-    }
-
     .modal-content {
         width: 95vw;
         height: 95vh;
@@ -1075,7 +995,6 @@ footer p {
 @media (max-width: 600px) {
     .hero-container, .hero-content {
         width: 100%;
-        min-width: 250px;
     }
     
     h1 {
@@ -1088,11 +1007,12 @@ footer p {
 
     .slogan {
         width: 320px;
+        max-width: 100%;
         padding: 0 10px;
     }
 
     .profile-card {
-        width: calc(100% - 40px);
+        width: 100%;
         max-width: 350px;
         display: flex;
         flex-direction: column;
@@ -1101,7 +1021,7 @@ footer p {
 
     .icons-container {
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .technologies-card {
@@ -1163,5 +1083,11 @@ footer p {
     .modal-technologies {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width: 362px) {
+    button {
+        height: 80px;
     }
 }

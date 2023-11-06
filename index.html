@@ -10,21 +10,10 @@
     <link rel="shortcut icon" href="./programming.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li id="homepage-li">Página Inicial</li>
-                <li id="aboutMe-li">Sobre mim</li>
-                <li id="solution-li">Serviços</li>
-                <li id="project-li">Projetos</li>
-                <li id="contact-li">Contato</li>
-            </ul>
-        </nav>
-        <div class="language-container">
-            <a href="./index.html"><img src="./brasil.png" alt="PT"/></a>
-            <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
-        </div>
-    </header>
+    <div class="language-container">
+        <a href="./index.html"><img src="./brasil.png" alt="PT"/></a>
+        <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
+    </div>
     <div class="hero-container" id="homepage">
         <div class="hero-content">
             <div class="title-container">
@@ -32,6 +21,7 @@
                 <h2 style="align-self: flex-end;">Desenvolvedor FullStack</h2>
             </div>
             <p class="slogan">Transformando grandes ideias em excelentes soluções através da programação</p>
+            <button class="contact-button">SOLICITE UM ORÇAMENTO</button>
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -63,15 +53,14 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>
-                    <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                        <button class="profile-button">Baixar CV</button>
-                    </a>
                 </div>
                 <p class="profile-sinopse">
-                    Eu sou um desenvolvedor web fullstack de Recife - PE que está sempre em busca de conhecimentos e novas tecnologias, pois acredito que a programação é uma importante ferramenta que nos permite resolver nossos problemas e tornar nossas atividades diárias mais fáceis. Atualmente trabalho como freelancer, mas também estou aberto a oportunidades de trabalho onde eu possa contribuir com o crescimento da empresa e do projeto. Tenho formação técnica em eletricidade industrial e mestrado em Engenharia Química com ênfase em biocombustíveis, podendo agregar experiências em projetos relacionados a estas áreas. Já desenvolvi diferentes tipos de aplicações, para diferentes propósitos, mas sempre com foco nos detalhes, de modo a promover uma melhor experiência ao usuário. Verifique meus trabalhos na seção Projetos deste site e sinta-se à vontade para entrar em contato.  
+                    Eu sou um desenvolvedor web fullstack de Recife - PE que está sempre em busca de conhecimentos e novas tecnologias, pois acredito que a programação é uma importante ferramenta que nos permite resolver nossos problemas e tornar nossas atividades diárias mais fáceis. Tenho formação técnica em eletricidade industrial e mestrado em Engenharia Química com ênfase em biocombustíveis, podendo agregar experiências em projetos relacionados a estas áreas. Trabalho com freelancer e já desenvolvi diferentes tipos de aplicações para clientes dos mais diversos segmentos, sempre com foco nos detalhes, de modo a promover uma melhor experiência ao usuário. Verifique meus trabalhos na seção Projetos deste site e sinta-se à vontade para entrar em contato.  
                 </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider">
+                <button class="contact-button">SOLICITE UM ORÇAMENTO</button>
+            </div>
             <div class="technologies-container">
                 <h2 class="details">Tecnologias utilizadas</h2>
                 <div class="technologies-content">
@@ -152,6 +141,9 @@
                     </div>
                 </div>
             </div>
+            <div class="divider" style="margin-bottom: 10px;">
+                <button class="contact-button">SOLICITE UM ORÇAMENTO</button>
+            </div>
         </div>
     </section>
     <section id="project">
@@ -200,6 +192,9 @@
                 </div>
                 <img class="scroll-button" id="arrow-right" src="./arrow-right.png" alt="direita"/>
             </div>
+            <div class="divider" style="margin-bottom: 10px;">
+                <button class="contact-button">SOLICITE UM ORÇAMENTO</button>
+            </div>
         </div>
         <div class="modal" id="modal">
             <div class="modal-content" id="modal-content"></div>
@@ -207,9 +202,47 @@
     </section>
     <section id="contact">
         <div class="content-container">
-            <h2 class="page-title">Entre em contato comigo</h2>
+            <h2 class="page-title">Solicite já o seu orçamento</h2>
+            <p class="details">Entre em contato comigo para conversar sobre o seu site</p>
             <div class="contact-content">
-                <p class="details">Preencha o formulário abaixo e envie uma mensagem. Responderei o mais rápido possível.</p>
+                <div class="social-content">
+                    <a href="https://wa.me/5581992621685" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span>(81) 99262-1685</span>
+                    </a>
+                    <a href="mailto:reinaldoasjr8@gmail.com" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span>reinaldoasjr8@gmail.com</span>
+                    </a>
+                    <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span>@reinaldo.alves8</span>
+                    </a>
+                    <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>/reinaldo.alves.587</span>
+                    </a>
+                    <a href="https://github.com/reinaldo-alves" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <span>/reinaldo-alves</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <span>/reinaldo-alves-8639aba9</span>
+                    </a>
+                </div>
                 <form action="https://formspree.io/f/xlekeaya" method="POST">
                     <label id="name">
                         Nome:
@@ -227,31 +260,13 @@
                         Mensagem:
                         <textarea name="message"></textarea>
                     </label>
-                    <button id="button" type="submit">Enviar</button>
+                    <button id="button" type="submit">SOLICITAR ORÇAMENTO</button>
                 </form>
             </div>
         </div>
     </section>
     <footer>
         <p>©2023 Todos os direitos reservados - Desenvolvido por Reinaldo Alves</p>
-        <div class="social-content">
-            <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-                <span>@reinaldo.alves8</span>
-            </a>
-            <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-                <span>/reinaldo.alves.587</span>
-            </a>
-            <a href="https://github.com/reinaldo-alves" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <span>/reinaldo-alves</span>
-            </a>
-            <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <span>/reinaldo-alves-8639aba9</span>
-            </a>
-        </div>
     </footer>
     <script src="https://kit.fontawesome.com/f68a24141b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

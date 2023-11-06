@@ -10,21 +10,10 @@
     <link rel="shortcut icon" href="./programming.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li id="homepage-li">Home</li>
-                <li id="aboutMe-li">About Me</li>
-                <li id="solution-li">Services</li>
-                <li id="project-li">Projects</li>
-                <li id="contact-li">Contact</li>
-            </ul>
-        </nav>
-        <div class="language-container">
-            <a href="./index.html"><img src="./brasil.png" alt="PT"/></a>
-            <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
-        </div>
-    </header>
+    <div class="language-container">
+        <a href="./index.html"><img src="./brasil.png" alt="PT"/></a>
+        <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
+    </div>
     <div class="hero-container" id="homepage">
         <div class="hero-content">
             <div class="title-container">
@@ -32,6 +21,7 @@
                 <h2 style="align-self: flex-end;">FullStack Developer</h2>
             </div>
             <p class="slogan">Turning great ideias in excelent solutions by programming</p>
+            <button class="contact-button">REQUEST A QUOTE</button>
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -63,15 +53,14 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>
-                    <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                        <button class="profile-button">Download CV</button>
-                    </a>
                 </div>
                 <p class="profile-sinopse">
-                    I am a fullstack web developer based in Recife, PE, Brazil, who is always looking for knowledge and new technologies, because I believe that programming is an important tool that allows us to solve our problems and make our daily activities easier. I currently work as a freelancer, but I am also open to job opportunities where I can contribute to the growth of the company and the project. I have a technical background in industrial electricity and a master's degree in Chemical Engineering with an emphasis on biofuels, so I am able to add experience in projects related to these areas. I have already developed different types of applications, for different purposes, but always focusing on details, in order to promote a better user experience. Check out my works in the Projects section of this website and feel free to get in touch.
+                    I am a full-stack web developer based in Recife, PE, Brazil, who is constantly seeking knowledge and new technologies, as I believe that programming is an essential tool that allows us to solve our problems and make our daily activities easier. I have a technical background in industrial electricity and a master's degree in Chemical Engineering with an emphasis on biofuels, which allows me to bring experiences to projects related to these areas. I work as a freelancer and have developed various types of applications for clients in diverse industries, always focusing on details to provide a better user experience. Check out my works in the Projects section of this website and feel free to get in touch.
                 </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider">
+                <button class="contact-button">REQUEST A QUOTE</button>
+            </div>
             <div class="technologies-container">
                 <h2 class="details">Used Technologies</h2>
                 <div class="technologies-content">
@@ -152,6 +141,9 @@
                     </div>
                 </div>
             </div>
+            <div class="divider" style="margin-bottom: 10px;">
+                <button class="contact-button">REQUEST A QUOTE</button>
+            </div>
         </div>
     </section>
     <section id="project">
@@ -200,6 +192,9 @@
                 </div>
                 <img class="scroll-button" id="arrow-right" src="./arrow-right.png" alt="direita"/>
             </div>
+            <div class="divider" style="margin-bottom: 10px;">
+                <button class="contact-button">REQUEST A QUOTE</button>
+            </div>
         </div>
         <div class="modal" id="modal">
             <div class="modal-content" id="modal-content"></div>
@@ -207,9 +202,47 @@
     </section>
     <section id="contact">
         <div class="content-container">
-            <h2 class="page-title">Contact Me</h2>
+            <h2 class="page-title">Request your quote now</h2>
+            <p class="details">Contact me to talk about your website</p>
             <div class="contact-content">
-                <p class="details">Fill out the form below and send a message. I will respond as soon as possible.</p>
+                <div class="social-content">
+                    <a href="https://wa.me/5581992621685" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span>(81) 99262-1685</span>
+                    </a>
+                    <a href="mailto:reinaldoasjr8@gmail.com" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span>reinaldoasjr8@gmail.com</span>
+                    </a>
+                    <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span>@reinaldo.alves8</span>
+                    </a>
+                    <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>/reinaldo.alves.587</span>
+                    </a>
+                    <a href="https://github.com/reinaldo-alves" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <span>/reinaldo-alves</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <span>/reinaldo-alves-8639aba9</span>
+                    </a>
+                </div>
                 <form action="https://formspree.io/f/xlekeaya" method="POST">
                     <label id="name">
                         Name:
@@ -227,31 +260,13 @@
                         Message:
                         <textarea name="message"></textarea>
                     </label>
-                    <button id="button" type="submit">Send</button>
+                    <button id="button" type="submit">REQUEST A QUOTE</button>
                 </form>
             </div>
         </div>
     </section>
     <footer>
         <p>©2023 All rights reserved - Developed by Reinaldo Alves</p>
-        <div class="social-content">
-            <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-                <span>@reinaldo.alves8</span>
-            </a>
-            <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-                <span>/reinaldo.alves.587</span>
-            </a>
-            <a href="https://github.com/reinaldo-alves" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <span>/reinaldo-alves</span>
-            </a>
-            <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <span>/reinaldo-alves-8639aba9</span>
-            </a>
-        </div>
     </footer>
     <script src="https://kit.fontawesome.com/f68a24141b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
