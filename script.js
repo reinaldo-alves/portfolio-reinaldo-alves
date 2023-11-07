@@ -18,69 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const cardsContainer = document.getElementById('cards-container');
-const arrowLeft = document.getElementById('arrow-left');
-const arrowRight = document.getElementById('arrow-right');
-
-function scrolltoLeft() {
-    const maxScroll = cardsContainer.scrollWidth - cardsContainer.clientWidth;
-    const pixScroll = 500;
-    if (cardsContainer.scrollLeft === 0) {
-        cardsContainer.scrollLeft = maxScroll;
-    } else {
-        cardsContainer.scrollLeft -= pixScroll;
-    }
-}
-
-function scrolltoRight() {
-    const maxScroll = cardsContainer.scrollWidth - cardsContainer.clientWidth;
-    const pixScroll = 500;
-    if (cardsContainer.scrollLeft === maxScroll) {
-        cardsContainer.scrollLeft = 0;
-    } else {
-        cardsContainer.scrollLeft += pixScroll;
-    }
-}
-
-function scrolltoTop() {
-    const maxScroll = cardsContainer.scrollHeight - cardsContainer.clientHeight;
-    const pixScroll = window.innerWidth > 478 ? 400 : 200;
-    if (cardsContainer.scrollTop === 0) {
-        cardsContainer.scrollTop = maxScroll;
-    } else {
-        cardsContainer.scrollTop -= pixScroll;
-    }
-}
-
-function scrolltoBottom() {
-    const maxScroll = cardsContainer.scrollHeight - cardsContainer.clientHeight;
-    const pixScroll = window.innerWidth > 478 ? 400 : 200;
-    if (cardsContainer.scrollTop === maxScroll) {
-        cardsContainer.scrollTop = 0;
-    } else {
-        cardsContainer.scrollTop += pixScroll;
-    }
-}
-
-function firstButton() {
-    if (window.innerWidth > 575) {
-        scrolltoLeft()
-    } else {
-        scrolltoTop()
-    }
-}
-
-function lastButton() {
-    if (window.innerWidth > 575) {
-        scrolltoRight()
-    } else {
-        scrolltoBottom()
-    }
-}
-
-arrowLeft.addEventListener('click', () => firstButton());
-arrowRight.addEventListener('click', () => lastButton());
-
 function showProjectDetails(project) {
     const lang = () => {
         if (document.documentElement.lang === 'pt-br') {
