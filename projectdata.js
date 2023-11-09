@@ -2,12 +2,12 @@ const sistemaUranor = {
     title: 'Sistema Uranor',
     titleEN: 'Uranor System',
     image: [
-        './sistemauranor/homepage.jpg',
-        './sistemauranor/consulta.jpg',
-        './sistemauranor/exibir.jpg',
-        './sistemauranor/cantos.jpg',
-        './sistemauranor/criar.jpg',
-        './sistemauranor/login.jpg'
+        './portfolio-images/sistemauranor/homepage.jpg',
+        './portfolio-images/sistemauranor/consulta.jpg',
+        './portfolio-images/sistemauranor/exibir.jpg',
+        './portfolio-images/sistemauranor/cantos.jpg',
+        './portfolio-images/sistemauranor/criar.jpg',
+        './portfolio-images/sistemauranor/login.jpg'
     ],
     links: [
         // {
@@ -61,10 +61,10 @@ const whatsAppWebClone = {
     title: 'WhatsApp Web Clone',
     titleEN: 'WhatsApp Web Clone',
     image: [
-        './whatsappwebclone/messages.jpg',
-        './whatsappwebclone/home.jpg',
-        './whatsappwebclone/login.jpg',
-        './whatsappwebclone/signup.jpg'
+        './portfolio-images/whatsappwebclone/messages.jpg',
+        './portfolio-images/whatsappwebclone/home.jpg',
+        './portfolio-images/whatsappwebclone/login.jpg',
+        './portfolio-images/whatsappwebclone/signup.jpg'
     ],
     links: [
         // {
@@ -113,13 +113,13 @@ const youtubeClone = {
     title: 'Youtube Clone',
     titleEN: 'Youtube Clone',
     image: [
-        './youtubeclone/home.jpg',
-        './youtubeclone/shorts.jpg',
-        './youtubeclone/profile.jpg',
-        './youtubeclone/search.jpg',
-        './youtubeclone/login.jpg',
-        './youtubeclone/signup.jpg',
-        './youtubeclone/addvideo.jpg'
+        './portfolio-images/youtubeclone/home.jpg',
+        './portfolio-images/youtubeclone/shorts.jpg',
+        './portfolio-images/youtubeclone/profile.jpg',
+        './portfolio-images/youtubeclone/search.jpg',
+        './portfolio-images/youtubeclone/login.jpg',
+        './portfolio-images/youtubeclone/signup.jpg',
+        './portfolio-images/youtubeclone/addvideo.jpg'
     ],
     links: [
         // {
@@ -173,11 +173,11 @@ const instagramClone = {
     title: 'Instagram Clone',
     titleEN: 'Instagram Clone',
     image: [
-        './instagramclone/login.jpg',
-        './instagramclone/feeda.jpg',
-        './instagramclone/post.jpg',
-        './instagramclone/upload.jpg',
-        './instagramclone/feedb.jpg'
+        './portfolio-images/instagramclone/login.jpg',
+        './portfolio-images/instagramclone/feeda.jpg',
+        './portfolio-images/instagramclone/post.jpg',
+        './portfolio-images/instagramclone/upload.jpg',
+        './portfolio-images/instagramclone/feedb.jpg'
     ],
     links: [
         {
@@ -221,10 +221,10 @@ const starWarsEncyclopedia = {
     title: 'Star Wars Encyclopedia',
     titleEN: 'Star Wars Encyclopedia',
     image: [
-        './starwarsencyclopedia/homestars.jpg',
-        './starwarsencyclopedia/starcharacters.jpg',
-        './starwarsencyclopedia/starpages.jpg',
-        './starwarsencyclopedia/starmodal.jpg'
+        './portfolio-images/starwarsencyclopedia/homestars.jpg',
+        './portfolio-images/starwarsencyclopedia/starcharacters.jpg',
+        './portfolio-images/starwarsencyclopedia/starpages.jpg',
+        './portfolio-images/starwarsencyclopedia/starmodal.jpg'
     ],
     links: [
         {
@@ -263,11 +263,11 @@ const reinaldoAlvesPortfolio = {
     title: 'Reinaldo Alves Portfolio',
     titleEN: "Reinaldo Alves' Portfolio",
     image: [
-        './portfolioreinaldoalves/home.jpg',
-        './portfolioreinaldoalves/aboutme.jpg',
-        './portfolioreinaldoalves/services.jpg',
-        './portfolioreinaldoalves/projects.jpg',
-        './portfolioreinaldoalves/contacts.jpg',
+        './portfolio-images/portfolioreinaldoalves/home.jpg',
+        './portfolio-images/portfolioreinaldoalves/aboutme.jpg',
+        './portfolio-images/portfolioreinaldoalves/services.jpg',
+        './portfolio-images/portfolioreinaldoalves/projects.jpg',
+        './portfolio-images/portfolioreinaldoalves/contacts.jpg',
     ],
     links: [
         {
@@ -343,13 +343,13 @@ const siteConhecendoOBrasil = {
     title: 'Site Conhecendo o Brasil', 
     titleEN: "Conhecendo o Brasil Website", 
     image: [
-        './conhecendoobrasil/CoBimage.jpg',
-        './conhecendoobrasil/CoBvideo.jpg',
-        './conhecendoobrasil/CoBphoto.jpg',
-        './conhecendoobrasil/CoBstate.jpg',
-        './conhecendoobrasil/CoBmun.jpg',
-        './conhecendoobrasil/CoBcuriosity.jpg',
-        './conhecendoobrasil/CoBcontact.jpg'
+        './portfolio-images/conhecendoobrasil/CoBimage.jpg',
+        './portfolio-images/conhecendoobrasil/CoBvideo.jpg',
+        './portfolio-images/conhecendoobrasil/CoBphoto.jpg',
+        './portfolio-images/conhecendoobrasil/CoBstate.jpg',
+        './portfolio-images/conhecendoobrasil/CoBmun.jpg',
+        './portfolio-images/conhecendoobrasil/CoBcuriosity.jpg',
+        './portfolio-images/conhecendoobrasil/CoBcontact.jpg'
     ],
     links: [
         {
@@ -383,8 +383,8 @@ const reproducaoFacebook = {
     title: 'Reprodução da página inicial do Facebook',
     titleEN: 'Facebook Homepage Reproduction',
     image: [
-        './facebookinterface/facehome.jpg',
-        './facebookinterface/facelogin.jpg'
+        './portfolio-images/facebookinterface/facehome.jpg',
+        './portfolio-images/facebookinterface/facelogin.jpg'
     ],
     links: [
         {
