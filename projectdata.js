@@ -10,11 +10,11 @@ const sistemaUranor = {
         './portfolio-images/sistemauranor/login.jpg'
     ],
     links: [
-        // {
-        //     href: '#',
-        //     class: 'fa-solid fa-earth-americas',
-        //     span: 'Website'
-        // },
+        {
+            href: 'https://sistemauranor.vercel.app/',
+            class: 'fa-solid fa-earth-americas',
+            span: 'Website'
+        },
         {
             href: 'https://github.com/reinaldo-alves/sistema-uranor',
             class: 'fa-brands fa-github',
@@ -47,14 +47,56 @@ const sistemaUranor = {
             src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
             style: ''
         },
+    ],
+    text: 'Sistema Uranor é uma aplicação construída para facilitar os serviços administrativos de um templo, através do gerenciamento de membros e acesso a documentos internos. Este sistema é utilizado por usuários cadastrados com três diferentes níveis de acesso, que uma vez logados, podem consultar, cadastrar ou alterar as informações de cada membro, bem como gerar relatórios individualizados com base nestas informações. Para construir a interface do Sistema Uranor, foi utilizado o framework React com Typescript e Styled Components, além de bibliotecas como MUI, pdfMake e SweetAlert, enquanto que no servidor foi utilizado Node.js com Typescript, com requisições através do Axios, upload de arquivos com Multer e integração com banco de dados MySQL. Atualmente, o sistema funciona localmente em uma máquina do templo e também conta com uma versão online para consultas.',
+    textEN: 'Uranor System is an application built to facilitate the administrative services of a temple, through member management and access to internal documents. This system is used by registered users with three different access levels, who, once logged in, can consult, register or change the information of each member, as well as generate individualized reports based on this information. React framework with Typescript and Styled Components was used to build the Uranor System interface, as well as libraries such as MUI, pdfMake and SweetAlert, while Node.js with Typescript was used on the server, with requests through Axios, file uploads with Multer and integration with MySQL database. Currently, the system runs locally on a computer in the temple and also has an online version for consultations.'
+}
+
+const aulasLapbioq = {
+    title: 'Horário de Aulas Práticas LAPBIOQ',
+    titleEN: 'LAPBIOQ Practical Classes Schedule',
+    image: [
+        './portfolio-images/aulaslapbioq/calendario.jpg',
+        './portfolio-images/aulaslapbioq/menu.jpg',
+        './portfolio-images/aulaslapbioq/addaula.jpg',
+        './portfolio-images/aulaslapbioq/login.jpg'
+    ],
+    links: [
         {
-            alt: 'Docker',
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-            style: ''
+            href: 'https://aulas-lapbioq.vercel.app/',
+            class: 'fa-solid fa-earth-americas',
+            span: 'Website'
+        },
+        {
+            href: 'https://github.com/reinaldo-alves/aulas-lapbioq',
+            class: 'fa-brands fa-github',
+            span: 'GitHub'
         },
     ],
-    text: 'Sistema Uranor é uma aplicação construída para facilitar os serviços administrativos de um templo, através do gerenciamento de membros e acesso a documentos internos. Este sistema é utilizado por usuários cadastrados com três diferentes níveis de acesso, que uma vez logados, podem consultar, cadastrar ou alterar as informações de cada membro, bem como gerar relatórios individualizados com base nestas informações. Para construir a interface do Sistema Uranor, foi utilizado o framework React com Typescript e Styled Components, além de bibliotecas como MUI, pdfMake e SweetAlert, enquanto que no servidor foi utilizado Node.js com Typescript, com requisições através do Axios, upload de arquivos com Multer e integração com banco de dados MySQL. Atualmente, o sistema funciona localmente em uma máquina do templo e é inicializado através de Docker Compose.',
-    textEN: 'Uranor System is an application built to facilitate the administrative services of a temple, through member management and access to internal documents. This system is used by registered users with three different access levels, who, once logged in, can consult, register or change the information of each member, as well as generate individualized reports based on this information. React framework with Typescript and Styled Components was used to build the Uranor System interface, as well as libraries such as MUI, pdfMake and SweetAlert, while Node.js with Typescript was used on the server, with requests through Axios, file uploads with Multer and integration with MySQL database. Currently, the system runs locally on a computer in the temple and is initialized through Docker Compose.'
+    technologies: [
+        {
+            alt: 'React',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            style: ''
+        },
+        {
+            alt: 'TypeScript',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            style: ''
+        },
+        {
+            alt: 'CSS3',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            style: ''
+        },
+        {
+            alt: 'Firebase',
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+            style: ''
+        }
+    ],
+    text: 'Horário de Aulas Práticas LAPBIOQ é um sistema desenvolvido para organizar as atividades dos técnicos de um laboratório de uma universidade. Com ele, é possível adicionar, editar ou remover aulas, atribuir um técnico responsável, verificar as aulas programadas para o dia ou semana e até gerar uma planilha com todas as aulas do mês. A interface desta aplicação foi construída usando React com Typescript e CSS, enquanto que o backend foi totalmente criada com Firebase, usando as funcionalidades de autenticação e banco de dados. Atualmente, o sistema se encontra em uso no laboratório e passa por atualizações periódicas.',
+    textEN: 'LAPBIOQ Practical Class Schedule is a system developed to organize the activities of technicians in a university laboratory. With it, they can add, edit, or remove classes, assign a responsible technician, check the scheduled classes for the day or week, and even generate a spreadsheet with all the classes for the month. The interface of this application was built using React with TypeScript and CSS, while the backend was entirely created with Firebase, utilizing its authentication and database functionalities. Currently, the system is in use in the laboratory and undergoes periodic updates.'
 }
 
 const whatsAppWebClone = {
@@ -414,4 +456,4 @@ const reproducaoFacebook = {
     textEN: "Website that reproduces the interface of Facebook's login screen and homepage, with a system that allows navigation between them through a button. This reproduction of the Facebook interface was completely developed with HTML and CSS."
 }
 
-export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, instagramClone, youtubeClone, whatsAppWebClone, sistemaUranor];
+export const projectData = [reproducaoFacebook, calculadoraIMC, reinaldoAlvesPortfolio, starWarsEncyclopedia, siteConhecendoOBrasil, instagramClone, youtubeClone, whatsAppWebClone, aulasLapbioq, sistemaUranor];
