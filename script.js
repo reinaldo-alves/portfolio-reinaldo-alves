@@ -59,11 +59,6 @@ function showProjectDetails(project) {
     modalTitle.innerText = lang() ? projectData[project].title : projectData[project].titleEN;
     modalContent.appendChild(modalTitle);
 
-    // const modalImage = document.createElement('img');
-    // modalImage.className = 'modal-image';
-    // modalImage.src = projectData[project].image;
-    // modalContent.appendChild(modalImage);
-
     const modalImage = document.createElement('div');
     modalImage.className = 'modal-image';
     const swiperDiv = document.createElement('div');

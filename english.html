@@ -10,60 +10,70 @@
     <link rel="shortcut icon" href="./programming.png" type="image/x-icon">
 </head>
 <body>
-    <div class="language-container">
-        <a href="./index.html"><img src="./brasil.png" alt="PT"/></a>
-        <a href="./english.html"><img src="./estados-unidos.png" alt="EN"/></a>
-    </div>
-    <div class="hero-container" id="homepage">
-        <div class="hero-content">
-            <div class="title-container">
-                <h1>Reinaldo Alves</h1>
-                <h2 style="align-self: flex-end;">FullStack Developer</h2>
+    <section id="homepage">
+        <div class="container">
+            <div class="hero-content" >
+                <div class="hero-texts">
+                    <div class="title-container">
+                        <h1>Reinaldo Alves</h1>
+                        <h3>FullStack Developer</h3>
+                    </div>
+                    <h2>Custom websites and web systems designed specifically to meet your goals</h2>
+                    <div class="button-container">
+                        <button class="project-button">SEE PROJECTS</button>
+                        <button class="contact-button">REQUEST A QUOTE</button>
+                    </div>
+                </div>
+                <div class="animation-container">
+                    <div class="hero-circle">
+                        <div class="img-hero banner-1"></div>
+                        <div class="img-hero banner-2"></div>
+                        <div class="img-hero banner-3"></div>
+                        <div class="img-hero banner-4"></div>
+                    </div>
+                </div>
             </div>
-            <p class="slogan">Turning great ideias in excelent solutions by programming</p>
-            <button class="contact-button">REQUEST A QUOTE</button>
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
             </svg>
         </div>
-        <div class="mainphoto">
-            <img alt="Reinaldo" src="./mainphoto.png"/>
-        </div>
-    </div>
+    </section>
     <section id="aboutMe">
-        <div class="content-container">
-            <h2 class="page-title">Who am I?</h2>
-            <div class="profile-content">
-                <div class="profile-card">
-                    <img class="profile-image" src="./15994696_1484321451630794_7265019365593122860_o.jpg" />
-                    <span class="name-text">Reinaldo Alves</span>
-                    <div class="icons-container">
-                        <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/reinaldo-alves" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
+        <div class="overlay">
+            <div class="container">
+                <h2 class="section-title">Who am I?</h2>
+                <div class="profile-content">
+                    <div class="profile-card">
+                        <img src="assets/images/15994696_1484321451630794_7265019365593122860_o.jpg" alt="Reinaldo Alves" />
+                        <span class="name-text">Reinaldo Alves</span>
+                        <span class="profile-text">Turning ideias in solutions by programming</span>
+                        <div class="icons-container">
+                            <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://github.com/reinaldo-alves" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
+                    <p class="profile-sinopse">
+                        I am a full-stack web developer based in Recife, PE, Brazil, who is constantly seeking knowledge and new technologies, as I believe that programming is an essential tool that allows us to solve our problems and make our daily activities easier. I have a technical background in industrial electricity and a master's degree in Chemical Engineering with an emphasis on biofuels, which allows me to bring experiences to projects related to these areas. I work as a freelancer and have developed various types of applications for clients in diverse industries, always focusing on details to provide a better user experience. Check out my works in the Projects section of this website and feel free to get in touch.
+                    </p>
                 </div>
-                <p class="profile-sinopse">
-                    I am a full-stack web developer based in Recife, PE, Brazil, who is constantly seeking knowledge and new technologies, as I believe that programming is an essential tool that allows us to solve our problems and make our daily activities easier. I have a technical background in industrial electricity and a master's degree in Chemical Engineering with an emphasis on biofuels, which allows me to bring experiences to projects related to these areas. I work as a freelancer and have developed various types of applications for clients in diverse industries, always focusing on details to provide a better user experience. Check out my works in the Projects section of this website and feel free to get in touch.
-                </p>
-            </div>
-            <div class="divider">
-                <button class="contact-button">REQUEST A QUOTE</button>
-            </div>
-            <div class="technologies-container">
-                <h2 class="details">Used Technologies</h2>
-                <div class="technologies-content">
+                <div class="button-container">
+                    <button class="project-button">SEE PROJECTS</button>
+                    <button class="contact-button">REQUEST A QUOTE</button>
+                </div>
+                <h2 class="section-subtitle">Used Technologies</h2>
+                <div class="technologies-container">
                     <div class="technologies-card">
                         <img alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                         <span>HTML5</span>
@@ -116,84 +126,89 @@
             </div>
         </div>
     </section>
-    <section id="solution">
-        <div class="content-container">
-            <div class="service-container">
-                <h2 class="page-title">Offered services</h2>
-                <div class="service-content" >
-                    <div class="service-card banner-1">
-                        <div class="service-background">
-                            <h3>Landing pages</h3>
-                            <p>A landing page is a web page designed to convert visitors into actions, such as sign-ups, purchases, or downloads. They stand out for their simplicity, with targeted content and a prominent call to action (CTA). Widely used in marketing campaigns.</p>
+    <section id="services">
+        <div class="overlay">
+            <div class="container">
+                <h2 class="section-title">Offered services</h2>
+                <div class="service-container">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/landing.png" alt="Landing pages" />
                         </div>
+                        <h3>Landing pages</h3>
+                        <p>A landing page is a web page designed to convert visitors into actions, such as sign-ups, purchases, or downloads. They stand out for their simplicity, with targeted content and a prominent call to action (CTA). Widely used in marketing campaigns.</p>
                     </div>
-                    <div class="service-card banner-2">
-                        <div class="service-background">
-                            <h3>Institutional Websites</h3>
-                            <p>An institutional website is a company's digital face, providing information about its history, values, services, and contact details. It's a platform that establishes credibility and helps the brand build trust and authority in the digital world, creating a connection with the customer.</p>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/instit.png" alt="Institutional Websites" />
                         </div>
+                        <h3>Institutional Websites</h3>
+                        <p>An institutional website is a company's digital face, providing information about its history, values, services, and contact details. It's a platform that establishes credibility and helps the brand build trust and authority in the digital world, creating a connection with the customer.</p>
                     </div>
-                    <div class="service-card banner-3">
-                        <div class="service-background">
-                            <h3>Web Applications</h3>
-                            <p>Systems with more complex functionalities that operate directly in the browser, such as social networks, service scheduling systems, inventory management, and employee/customer registration. They are highly accessible and flexible, usable on any internet-connected machine.</p>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/app.png" alt="Web Applications" />
                         </div>
+                        <h3>Web Applications</h3>
+                        <p>Systems with more complex functionalities that operate directly in the browser, such as social networks, service scheduling systems, inventory management, and employee/customer registration. They are highly accessible and flexible, usable on any internet-connected machine.</p>
                     </div>
                 </div>
-            </div>
-            <div class="divider" style="margin-bottom: 10px;">
-                <button class="contact-button">REQUEST A QUOTE</button>
+                <div class="button-container">
+                    <button class="contact-button">REQUEST A QUOTE</button>
+                </div>
             </div>
         </div>
     </section>
     <section id="project">
-        <div class="content-container">
-            <h2 class="page-title">My Projects</h2>
-            <p class="details">Click on the project to get more details</p>
-            <div class="project-content">
-                <div class="project-card" id="project9">
-                    <span class="project-title">Uranor System</span>
-                    <image class="project-image" src="./portfolio-images/sistemauranor/homepage.jpg" />
+        <div class="overlay">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Click on the project to get more details</p>
+                <div class="project-content">
+                    <div class="project-card" id="project9">
+                        <h3>Uranor System</h3>
+                        <img alt="Uranor System" src="./portfolio-images/sistemauranor/homepage.jpg" />
+                    </div>
+                    <div class="project-card" id="project8">
+                        <h3>LAPBIOQ Practical Classes Schedule</h3>
+                        <img alt="LAPBIOQ Practical Classes Schedule" src="./portfolio-images/aulaslapbioq/calendario.jpg" />
+                    </div>
+                    <div class="project-card" id="project7">
+                        <h3>WhatsApp Web Clone</h3>
+                        <img alt="WhatsApp Web Clone" src="./portfolio-images/whatsappwebclone/messages.jpg" />
+                    </div>
+                    <div class="project-card" id="project6">
+                        <h3>Youtube Clone</h3>
+                        <img alt="Youtube Clone" src="./portfolio-images/youtubeclone/home.jpg" />
+                    </div>
+                    <div class="project-card" id="project5">
+                        <h3>Instagram Clone</h3>
+                        <img alt="Instagram Clone" src="./portfolio-images/instagramclone/login.jpg" />
+                    </div>
+                    <div class="project-card" id="project4">
+                        <h3>Conhecendo o Brasil Website</h3>
+                        <img alt="Conhecendo o Brasil Website" src="./portfolio-images/conhecendoobrasil/CoBimage.jpg" />
+                    </div>
+                    <div class="project-card" id="project3">
+                        <h3>Star Wars Encyclopedia</h3>
+                        <img alt="Star Wars Encyclopedia" src="./portfolio-images/starwarsencyclopedia/homestars.jpg" />
+                    </div>
+                    <div class="project-card" id="project2">
+                        <h3>Reinaldo Alves' Portfolio</h3>
+                        <img alt="Reinaldo Alves' Portfolio" src="./portfolio-images/portfolioreinaldoalves/home.jpg" />
+                    </div>
+                    <div class="project-card" id="project1">
+                        <h3>BMI Calculator</h3>
+                        <img alt="BMI Calculator" src="./portfolio-images/imccalc.jpg" />
+                    </div>
+                    <div class="project-card" id="project0">
+                        <h3>Facebook Homepage Reproduction</h3>
+                        <img alt="Facebook Homepage Reproduction" src="./portfolio-images/facebookinterface/facehome.jpg" />
+                    </div>
                 </div>
-                <div class="project-card" id="project8">
-                    <span class="project-title">LAPBIOQ Practical Classes Schedule</span>
-                    <image class="project-image" src="./portfolio-images/aulaslapbioq/calendario.jpg" />
+                <div class="button-container">
+                    <button class="contact-button">REQUEST A QUOTE</button>
                 </div>
-                <div class="project-card" id="project7">
-                    <span class="project-title">WhatsApp Web Clone</span>
-                    <image class="project-image" src="./portfolio-images/whatsappwebclone/messages.jpg"" />
-                </div>
-                <div class="project-card" id="project6">
-                    <span class="project-title">Youtube Clone</span>
-                    <image class="project-image" src="./portfolio-images/youtubeclone/home.jpg" />
-                </div>
-                <div class="project-card" id="project5">
-                    <span class="project-title">Instagram Clone</span>
-                    <image class="project-image" src="./portfolio-images/instagramclone/login.jpg" />
-                </div>
-                <div class="project-card" id="project4">
-                    <span class="project-title">Conhecendo o Brasil Website</span>
-                    <image class="project-image" src="./portfolio-images/conhecendoobrasil/CoBimage.jpg" />
-                </div>
-                <div class="project-card" id="project3">
-                    <span class="project-title">Star Wars Encyclopedia</span>
-                    <image class="project-image" src="./portfolio-images/starwarsencyclopedia/homestars.jpg" />
-                </div>
-                <div class="project-card" id="project2">
-                    <span class="project-title">Reinaldo Alves' Portfolio</span>
-                    <image class="project-image" src="./portfolio-images/portfolioreinaldoalves/home.jpg" />
-                </div>
-                <div class="project-card" id="project1">
-                    <span class="project-title">BMI Calculator</span>
-                    <image class="project-image" src="./imccalc.jpg" />
-                </div>
-                <div class="project-card" id="project0">
-                    <span class="project-title">Facebook Homepage Reproduction</span>
-                    <image class="project-image" src="./portfolio-images/facebookinterface/facehome.jpg" />
-                </div>
-            </div>
-            <div class="divider" style="margin-bottom: 10px;">
-                <button class="contact-button">REQUEST A QUOTE</button>
             </div>
         </div>
         <div class="modal" id="modal">
@@ -201,48 +216,10 @@
         </div>
     </section>
     <section id="contact">
-        <div class="content-container">
-            <h2 class="page-title">Request your quote now</h2>
-            <p class="details">Contact me to talk about your website</p>
-            <div class="contact-content">
-                <div class="social-content">
-                    <a href="https://wa.me/5581992621685" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <span>(81) 99262-1685</span>
-                    </a>
-                    <a href="mailto:reinaldoasjr8@gmail.com" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <span>reinaldoasjr8@gmail.com</span>
-                    </a>
-                    <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <span>@reinaldo.alves8</span>
-                    </a>
-                    <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <span>/reinaldo.alves.587</span>
-                    </a>
-                    <a href="https://github.com/reinaldo-alves" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <span>/reinaldo-alves</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
-                        <div class="icon-wraper">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <span>/reinaldo-alves-8639aba9</span>
-                    </a>
-                </div>
+        <div class="overlay">
+            <div class="container">
+                <h2 class="section-title">Request your quote now</h2>
+                <p class="section-subtitle">Contact me to talk about your website</p>
                 <form action="https://formspree.io/f/xlekeaya" method="POST">
                     <label id="name">
                         Name:
@@ -266,8 +243,50 @@
         </div>
     </section>
     <footer>
-        <p>©2023 All rights reserved - Developed by Reinaldo Alves</p>
+        <div class="container">
+            <div class="contact-content">
+                <div class="main-contact">
+                    <h3>Contact me</h3>
+                    <a href="https://wa.me/5581992621685" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span>(81) 99262-1685</span>
+                    </a>
+                    <a href="mailto:reinaldoasjr8@gmail.com" target="_blank">
+                        <div class="icon-wraper">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span>reinaldoasjr8@gmail.com</span>
+                    </a>
+                </div>
+                <div class="social-content">
+                    <h3>Social media</h3>
+                    <div class="icons-container">
+                        <a href="https://www.instagram.com/reinaldo.alves8/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/reinaldo.alves.587" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://github.com/reinaldo-alves" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/reinaldo-alves-8639aba9/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>©2025 All rights reserved - Developed by Reinaldo Alves</p>
+        </div>
     </footer>
+    <div class="language-container">
+        <div class="language-content">
+            <a href="./index.html"><img src="assets/icons/brasil.png" alt="PT"/></a>
+            <a href="./english.html"><img src="assets/icons/estados-unidos.png" alt="EN"/></a>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/f68a24141b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./script.js"></script>
