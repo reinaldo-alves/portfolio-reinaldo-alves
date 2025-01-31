@@ -1,10 +1,15 @@
 import { projectData } from "./projectdata.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contactButtons = document.querySelectorAll('.contact-button')
+    const contactButtons = document.querySelectorAll('.contact-button');
+    const projectButtons = document.querySelectorAll('.project-button');
 
     contactButtons.forEach(link => {
         link.addEventListener('click', scrollToContact);
+    })
+
+    projectButtons.forEach(link => {
+        link.addEventListener('click', scrollToProject);
     })
 
     function scrollToContact(event) {
@@ -13,6 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (contactSection) {
             event.preventDefault();
             const scrollPosition = contactSection.offsetTop;
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        }
+    }
+
+    function scrollToProject(event) {
+        const projectSection = document.getElementById('project');
+
+        if (projectSection) {
+            event.preventDefault();
+            const scrollPosition = projectSection.offsetTop;
             window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
         }
     }

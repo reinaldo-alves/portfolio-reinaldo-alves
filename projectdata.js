@@ -347,7 +347,7 @@ const reinaldoAlvesPortfolio = {
 const calculadoraIMC = {
     title: 'Calculadora IMC',
     titleEN: 'BMI Calculator',
-    image: ['./imccalc.jpg'],
+    image: ['./portfolio-images/imccalc.jpg'],
     links: [
         {
             href: 'https://reinaldo-alves.github.io/IMC-calc/',
